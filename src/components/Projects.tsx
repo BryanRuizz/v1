@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './../assets/Br_logo-png.png';
+// import logo from './../assets/r2.jpg';
 
 
 const Projects = () => {
@@ -19,7 +19,7 @@ const Projects = () => {
                                 <h3>
                                     <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href="httnected-app" target="_blank" rel="noreferrer noopener" aria-label="Build a Spotify Connected App (opens in a new tab)">
                                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block">
-                                        </span><span>Prototipe<span className="inline-block">App
+                                        </span><span>Information Manager erp<span className="inline-block">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
                                                 <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
                                             </svg>
@@ -27,9 +27,12 @@ const Projects = () => {
                                         </span>
                                     </a>
                                 </h3>
-                                <p className="mt-2 text-sm leading-normal">not infp yet.</p>
+                                <p className="mt-2 text-sm leading-normal">Enterprise resource management system, non-commercial, modular, comprehensive and customised.</p>
                             </div>
-                            <img alt="Bu just info" loading="lazy" width="200" height="48" decoding="async" data-nimg="1" className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: "transparent" }}  src={`${logo}&w=640&q=75`}></img>
+                            <img alt="Bu just info" loading="lazy" width="200" height="58" decoding="async" data-nimg="1" className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: "transparent" }}
+                                srcSet="https://res.cloudinary.com/dl86hv6ta/image/upload/v1721414801/a_sjtlua.png 1x, https://res.cloudinary.com/dl86hv6ta/image/upload/v1721414801/a_sjtlua.png 2x"
+                                src={"https://res.cloudinary.com/dl86hv6ta/image/upload/v1721414801/a_sjtlua.png"}
+                            ></img>
                         </div>
                     </li>
                 </ul>
