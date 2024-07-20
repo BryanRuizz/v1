@@ -17,7 +17,7 @@ export const dataprojects = [
         mainimg: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721418599/b_mcmflx.png",
     },
     {
-        href: "",
+        href: "/Projects",
         name: "Savvy bucks",
         label: "Loans and savings for business",
         desc: "A user-friendly mobile application designed to manage both savings and business loans, tailored for the general public, with an intuitive interface",

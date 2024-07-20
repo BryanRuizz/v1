@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-// tailwind.config.js
-
 module.exports = {
-  content: ["./src"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"], // Ejemplo de extensión de fuentes
+        sans: ["Inter", "sans-serif"],
       },
       colors: {
         slate: {
@@ -22,13 +20,19 @@ module.exports = {
         },
       },
       fontSize: {
-        '7xl': '5rem', // Ejemplo de extensión de tamaño de fuente
+        '7xl': '5rem',
+        '500px': '500px', 
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(-25%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+          '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+        },
+      },
+      animation: {
+        'bounce-slow': 'bounce 2s infinite',
       },
     },
   },
-  plugins: [
-    // Aquí puedes habilitar plugins adicionales de Tailwind CSS si los necesitas
-  ],
+  plugins: [],
 };
-
-
