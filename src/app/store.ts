@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import PortafolioSlice from '../reducers/PortafolioSlice';
+import PortafolioSlice from '../redux/PortafolioSlice';
 
 
 

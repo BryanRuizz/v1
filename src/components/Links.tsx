@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { datalinks } from '../data/links';
-import { UrlsInteface } from '../interface/linksInterfcae';
+import { UrlsInteface } from '../models/linksInterfcae';
 
 
 const Links = () => {

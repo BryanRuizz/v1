@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import About from './components/About';
-import Footer from './components/Footer';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
+import About from './common/About';
+import Footer from './common/Footer';
+import Experience from './common/Experience';
+import Projects from './common/Projects';
 import Links from './components/Links';
 
 function App() {
