@@ -49,7 +49,7 @@ const ProjectsSection = () => {
 
             }
 
-<div>
+
             <div className="mt-12">
                 <a className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Project Archive" href="/Projects" ><span>
                     <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">View Full Project </span>

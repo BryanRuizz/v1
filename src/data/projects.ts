@@ -1,5 +1,13 @@
 export const dataprojects = [
     {
+        href: "/Projects",
+        name: "Savvy bucks",
+        label: "Loans and savings for business",
+        desc: "A user-friendly mobile application designed to manage both savings and business loans, tailored for the general public, with an intuitive interface",
+        srcsett: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721435707/c_cu5l1g.png 1x, https://res.cloudinary.com/dl86hv6ta/image/upload/v1721435707/c_cu5l1g.png 2x",
+        mainimg: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721435707/c_cu5l1g.png",
+    },
+    {
         href: "https://xam.aldafa.com.mx:3000/",
         name: "Information Manager erp",
         label: "Erp system",
@@ -16,12 +24,5 @@ export const dataprojects = [
         srcsett: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721418599/b_mcmflx.png 1x, https://res.cloudinary.com/dl86hv6ta/image/upload/v1721418599/b_mcmflx.png 2x",
         mainimg: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721418599/b_mcmflx.png",
     },
-    {
-        href: "/Projects",
-        name: "Savvy bucks",
-        label: "Loans and savings for business",
-        desc: "A user-friendly mobile application designed to manage both savings and business loans, tailored for the general public, with an intuitive interface",
-        srcsett: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721435707/c_cu5l1g.png 1x, https://res.cloudinary.com/dl86hv6ta/image/upload/v1721435707/c_cu5l1g.png 2x",
-        mainimg: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721435707/c_cu5l1g.png",
-    },
+   
 ]

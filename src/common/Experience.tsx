@@ -69,7 +69,7 @@ const Experience = () => {
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium leading-snug text-slate-200">
                   <div>
-                    <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" target="_blank" rel="noreferrer noopener" href="#" aria-label="UI Engineer Co-op at Apple (opens in a new tab)">
+                    <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" target="_blank" rel="noreferrer noopener" href="/Projects" aria-label="UI Engineer Co-op at Apple (opens in a new tab)">
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                       <span>DevOps Engineer ·{" "}
                         <span className="inline-block"> UTLD
