@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Links from '../components/Links';
 import About from '../common/About';
 import Experience from '../common/Experience';
-import Projects from './Projects';
 import Footer from '../common/Footer';
 import ProjectsSection from '../common/ProjectsSection';
 
