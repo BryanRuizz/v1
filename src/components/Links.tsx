@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { datalinks } from '../data/links';
-import { UrlsInteface } from '../models/linksInterfcae';
+import { UrlsInteface } from '../models/linksInterface';
 
 
 const Links = () => {
-    const [data, setData] = useState<UrlsInteface[]>(datalinks);
+    const [data] = useState<UrlsInteface[]>(datalinks);
     // console.log("data", datalinks);
 
     return (

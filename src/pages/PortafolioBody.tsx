@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import Links from '../components/Links';
+import { useEffect, useState } from 'react'
 import About from '../common/About';
 import Experience from '../common/Experience';
-import Footer from '../common/Footer';
 import ProjectsSection from '../common/ProjectsSection';
+import Footer from '../common/Footer';
+import Links from '../components/Links';
+
 
 const Portafolio = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });

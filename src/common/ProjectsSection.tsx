@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { dataprojects } from '../data/projects';
 import { projectsInterfaces } from '../models/projectsInterface';
 
+
 const ProjectsSection = () => {
     // const navigate = useNavigate();
-    const [data, setData] = useState<projectsInterfaces[]>(dataprojects);
+    const [data] = useState<projectsInterfaces[]>(dataprojects);
 
     return (
         <>
