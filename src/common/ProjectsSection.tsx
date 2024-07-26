@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import { dataprojects } from '../data/projects';
 import { projectsInterfaces } from '../models/projectsInterface';
+import { useNavigate } from 'react-router-dom';
 
 
 const ProjectsSection = () => {
     // const navigate = useNavigate();
     const [data] = useState<projectsInterfaces[]>(dataprojects);
-
+   
+    let navigate = useNavigate();
+    const route = () => {
+        navigate("/Projects");
+    }
     return (
         <>
             <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -51,8 +56,8 @@ const ProjectsSection = () => {
             }
 
 
-            <div className="mt-12">
-                <a className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Project Archive" href="/Projects" ><span>
+            <div className="mt-12" onClick={route}>
+                <span className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Project Archive" ><span>
                     <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">View Full Project </span>
                     <span className="whitespace-nowrap">
                         <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">Archive</span>
@@ -61,7 +66,7 @@ const ProjectsSection = () => {
                         </svg>
                     </span>
                 </span>
-                </a>
+                </span>
             </div>
         </>
     )
