@@ -189,7 +189,7 @@ const Experience = () => {
 
 
         <div className="mt-12">
-          <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"  href="./src/assets/Software_engineer_Bryan_ruiz_cv_eng.pdf" target="_blank" rel="noreferrer noopener" aria-label="View  Résumé (opens in a new tab)">
+          <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"  href="/Software_engineer_Bryan_ruiz_cv_eng.pdf" target="_blank" rel="noreferrer noopener" aria-label="View  Résumé (opens in a new tab)">
           <span>View
             <span className="inline-block">Résumé
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
