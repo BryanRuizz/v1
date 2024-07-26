@@ -1,6 +1,6 @@
 export const dataprojects = [
     {
-        href: "/Projects",
+        href: "",
         name: "Savvy bucks",
         label: "Loans and savings for business",
         desc: "A user-friendly mobile application designed to manage both savings and business loans, tailored for the general public, with an intuitive interface",
