@@ -10,8 +10,22 @@ const Portafolio = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [activeSection, setActiveSection] = useState<string>('about');
 
+    // const alice: any = [7, 3, 2, 4];
+    // const bob: any = [6, 1, 5];
+
+    // scripting problem 
+    // const mainfun = () => {
+        // console.log(alice ," and bob ", bob);
+
+    // }
+
+
+    // mainfun();
+
+
     //#region managemet of scrolling 
     useEffect(() => {
+        // mainfun();
         const handleScroll = () => {
             const sections = document.querySelectorAll('section');
             let currentSection: string | null = 'about';
