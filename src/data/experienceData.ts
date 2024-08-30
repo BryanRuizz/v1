@@ -15,6 +15,7 @@ export const experienceData = [
             "Vue.js",
             "Node js",
             "SQL Server",
+            "Python",
             "Docker",
             "Git",
             "Jest",
