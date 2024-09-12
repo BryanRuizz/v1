@@ -1,34 +1,72 @@
-import {  FaGithub, FaInternetExplorer } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaGithub, FaInternetExplorer } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 // import '../App.css';
 
 const Projects = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
   let navigate = useNavigate();
   // const bounceAnimation = {
   //   animation: 'bounce 2s infinite',
   // };
 
-  const NaviToProjectbyOne =()=>{
+  const NaviToProjectbyOne = () => {
     navigate("/ProjectByOne");
   }
+
+  //#region managment position x and y
+  useEffect(() => {
+    const handleMouseMove = (event: { clientX: number; clientY: number; }) => {
+      // Remover el cálculo del scroll
+      setPosition({ x: event.clientX, y: event.clientY });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  //#endregion
+
+
+
   return (
     <div className="min-h-screen bg-slate-900" >
+      <div
+        className="pointer-events-none fixed inset-0 z-30 transition duration-300"
+        style={{
+          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(28, 211, 217, 0.1), transparent 40%)`
+        }}
+      ></div>
 
-      <div style={{ backgroundColor: "", width: "100%", height: "18vh", bottom: 0 }}>
-        <button onClick={()=>  navigate("/")} className="absolute top-8 left-8 bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 rounded-l transition-colors duration-300 hover:bg-[#082f49]" >
-          <a className="flex items-center text-white leading-normal">
-            <IoIosArrowBack className="mr-1" /> Back
-          </a>
-        </button>
 
-        <div className="flex flex-col items-center justify-center h-full ">
-          <h1 className="text-white text-3xl font-bold">Public and personal projects</h1>
-          <h2 className=" text-2xl text-slate-200">Redirection to pages or github repositories </h2>
+
+      <div style={{ backgroundColor: "", width: "100%", height: "10vh", bottom: 0 }}></div>
+
+      <div style={{ width: "20%", backgroundColor: "", position: "absolute", top: "10vh" }}>
+        <div style={{ height: "auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "", marginBottom: "50px" }}>
+          <button
+            onClick={() => navigate("/")}
+            className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49]"
+          >
+            <span className="flex items-center text-white leading-normal">
+              <IoIosArrowBack className="mr-1" /> Back
+            </span>
+          </button>
         </div>
       </div>
 
+      <div className="flex flex-col items-center justify-center h-full mb-12 responsivephone" style={{ justifySelf: "center", background: "" }}>
+        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Public and personal projects</h1>
+        <h2 className=" mt-3 text-lg font-medium leading-normal text-slate-400 sm:text-xl">Redirection to pages or github repositories </h2>
+      </div>
+
       <div className="min-h-screen bg-slate-900 relative">
+
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
 
           {/* Tarjeta con descripción */}
@@ -53,13 +91,14 @@ const Projects = () => {
                 </a> */}
               </div>
               {/* Descripción */}
-              <div className="bg-slate-900 text-white text-center p-2 flex-shrink-0 h-1/3">
-                <div className="h-full overflow-auto">
-                  <h2>
-                    Descripción de la imagen 1Descripción de la imagen 1Descripción de la imagen 1
-                  </h2>
+              <div className="bg-slate-900 p-2 flex-shrink-0 h-1/3 text-slate-400 px-4 rounded-lg ">
+                <div className="h-full overflow-auto mb-4">
+                  <p className="mb-4">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"
+                  </p>
                 </div>
               </div>
+
             </div>
 
 
@@ -88,7 +127,7 @@ const Projects = () => {
                 </a> */}
               </div>
               {/* Descripción */}
-              <div className="bg-slate-900 text-white text-center p-2 flex-shrink-0 h-1/3">
+              <div className="bg-slate-900 text-white text-center p-2 flex-shrink-0 h-1/3 rounded-lg ">
                 <button
                   onClick={NaviToProjectbyOne}
                   className="px-3 py-2 bg-slate-900 text-white border border-gray-400 w-[98%] h-full mx-auto rounded-lg transition-colors duration-300 hover:bg-[#082f49]"

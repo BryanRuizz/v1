@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Personalización del scroll para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0f172a; /* Color de la pista del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0f172a; /* Color del pulgar del scrollbar */
+  border-radius: 6px; /* Bordes redondeados para el pulgar */
+}
+
+/* Personalización del scroll para Firefox */
+* {
+  scrollbar-width: thin; /* Hacer el scrollbar más delgado */
+  scrollbar-color: #6a7691 #0f172a; /* Color del pulgar y el track del scrollbar */
+}
+
+
+/* projects css and medria queries*/
+@media (max-width: 842px) {
+  /* Aquí van tus estilos específicos */
+  .responsivephone {
+      /* Ejemplo de estilo */
+      margin-top:65px;
+  }
+}
