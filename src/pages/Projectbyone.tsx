@@ -39,7 +39,7 @@ const Projectbyone = () => {
 
 
                 {/* Columna lateral fija */}
-                <div style={{ width: "20%", backgroundColor: "red", position: "fixed", top: "10vh" }}>
+                <div style={{ width: "20%", backgroundColor: "", position: "fixed", top: "10vh" }}>
 
                     <div style={{ height: "auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "", marginBottom: "50px" }}>
                         <button
@@ -57,19 +57,19 @@ const Projectbyone = () => {
                         <li>
                             <a className="text-slate-400 font-sans text-base flex items-center" href="#about">
                                 {/* <span className="nav-indicator mr-2 h-px w-4 bg-slate-400 transition-all"></span> */}
-                                <span className="nav-text">About</span>
+                                <span className="nav-text hover:text-slate-200 focus-visible:text-slate-200">About</span>
                             </a>
                         </li>
                         <li>
                             <a className="text-slate-400 font-sans text-base flex items-center" href="#experience">
                                 {/* <span className="nav-indicator mr-2 h-px w-4 bg-slate-400 transition-all"></span> */}
-                                <span className="nav-text">Experience</span>
+                                <span className="nav-text hover:text-slate-200 focus-visible:text-slate-200">Experience</span>
                             </a>
                         </li>
                         <li>
                             <a className="text-slate-400 font-sans text-base flex items-center" href="#projects">
                                 {/* <span className="nav-indicator mr-2 h-px w-4 bg-slate-400 transition-all"></span> */}
-                                <span className="nav-text">Projects</span>
+                                <span className="nav-text hover:text-slate-200 focus-visible:text-slate-200">Projects</span>
                             </a>
                         </li>
                     </ul>
