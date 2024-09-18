@@ -39,7 +39,7 @@ const Projectbyone = () => {
 
 
                 {/* Columna lateral fija */}
-                <div style={{ width: "20%", backgroundColor: "", position: "fixed", top: "10vh" }}>
+                <div style={{ width: "20%", backgroundColor: "", position: "fixed", top: "10vh" }} className='floatbutton'>
 
                     <div style={{ height: "auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "", marginBottom: "50px" }}>
                         <button
@@ -53,7 +53,7 @@ const Projectbyone = () => {
                     </div>
 
 
-                    <ul className="flex flex-col items-center justify-center space-y-4 p-0 m-0 h-full">
+                    <ul className="flex flex-col items-center justify-center space-y-4 p-0 m-0 h-full noneed">
                         <li>
                             <a className="text-slate-400 font-sans text-base flex items-center" href="#about">
                                 {/* <span className="nav-indicator mr-2 h-px w-4 bg-slate-400 transition-all"></span> */}

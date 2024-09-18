@@ -15,30 +15,74 @@ code {
 
 /* Personalización del scroll para navegadores Webkit (Chrome, Safari) */
 ::-webkit-scrollbar {
-  width: 12px; /* Ancho del scrollbar */
+  width: 12px;
+  /* Ancho del scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #0f172a; /* Color de la pista del scrollbar */
+  background-color: #0f172a;
+  /* Color de la pista del scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0f172a; /* Color del pulgar del scrollbar */
-  border-radius: 6px; /* Bordes redondeados para el pulgar */
+  background-color: #0f172a;
+  /* Color del pulgar del scrollbar */
+  border-radius: 6px;
+  /* Bordes redondeados para el pulgar */
 }
 
 /* Personalización del scroll para Firefox */
 * {
-  scrollbar-width: thin; /* Hacer el scrollbar más delgado */
-  scrollbar-color: #6a7691 #0f172a; /* Color del pulgar y el track del scrollbar */
+  scrollbar-width: thin;
+  /* Hacer el scrollbar más delgado */
+  scrollbar-color: #6a7691 #0f172a;
+  /* Color del pulgar y el track del scrollbar */
 }
 
 
 /* projects css and medria queries*/
 @media (max-width: 842px) {
+
   /* Aquí van tus estilos específicos */
   .responsivephone {
-      /* Ejemplo de estilo */
-      margin-top:65px;
+    /* Ejemplo de estilo */
+    margin-top: 65px;
+  }
+
+  .noneed {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .floatbutton {
+    position: absolute !important;
+    top: 3.5vh !important;
+    left: 130px;
+    /* width: 100% !important; */
+  }
+  /* .floatback{
+    height: 10vh !important;
+  } */
+}
+@media (max-width: 735px) {
+  .floatbutton {
+    position: absolute !important;
+    top: 3.5vh !important;
+    left: 120px;
+  }
+}
+@media (max-width: 650px) {
+  .floatbutton {
+    position: absolute !important;
+    top: 3.5vh !important;
+    left: 115px;
+  }
+}
+@media (max-width: 550px) {
+  .floatbutton {
+    position: absolute !important;
+    top: 3.5vh !important;
+    left: 100px;
   }
 }

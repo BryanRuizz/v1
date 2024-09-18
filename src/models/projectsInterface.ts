@@ -3,6 +3,17 @@ export interface projectsInterfaces {
     name: string,
     label: string,
     desc: string
-    srcsett:string,
-    mainimg:string
+    srcsett: string,
+    mainimg: string
+}
+
+export interface allprojects {
+    Title: string;
+    Img: string;
+    ImgDesc: string;
+    Uri: string;
+    Github: string;
+    GeneralDescription: string;
+    Button: string;
+    index: string[];
 }
