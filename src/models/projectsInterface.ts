@@ -9,6 +9,7 @@ export interface projectsInterfaces {
 
 export interface allprojects {
     Title: string;
+    date:string;
     Img: string;
     ImgDesc: string;
     Uri: string;

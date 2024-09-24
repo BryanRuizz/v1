@@ -1,12 +1,14 @@
 
 import { useEffect, useState } from 'react';
 import { IoIosArrowBack } from 'react-icons/io';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { RootState } from '../app/store';
 
 const Projectbyone = () => {
     let navigate = useNavigate();
-
     const [position, setPosition] = useState({ x: 0, y: 0 });
+
     //#region managment position x and y
     useEffect(() => {
         const handleMouseMove = (event: { clientX: number; clientY: number; }) => {
@@ -22,26 +24,30 @@ const Projectbyone = () => {
         };
     }, []);
     //#endregion
+    const tempinfo = useSelector((state: RootState) => state.Portafolio.tempinfo);
+    const [data] = useState<any>(tempinfo);//add interface
+    console.log("mira zorra", data);
+
     return (
-        <div className="min-h-screen bg-slate-900 relative">
+        <div className="min-h-screen bg-slate-900 relative selection:bg-teal-300 selection:text-teal-900">
             <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
                 style={{ background: `radial-gradient(600px circle at ${position.x}px ${position.y}px,rgba(28, 211, 217, 0.1),transparent 40%)` }}>
             </div>
             {/* Header con el botón de regreso */}
-
             <div className='flex felx-nowrap' style={{ position: "fixed", width: "100%", height: "10vh", top: 0 }}>
 
                 <div style={{ background: "", width: "100%", height: "100%", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", zIndex: 1000 }}></div>
             </div>
-
             {/* Contenedor principal con columnas laterales y contenido central */}
+
             <div style={{ display: "flex", width: "100%", height: "90vh" }}>
+
 
 
                 {/* Columna lateral fija */}
                 <div style={{ width: "20%", backgroundColor: "", position: "fixed", top: "10vh" }} className='floatbutton'>
 
-                    <div style={{ height: "auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "", marginBottom: "50px" }}>
+                    <div style={{ height: "auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "", marginBottom: "50px", zIndex: "1000" }}>
                         <button
                             onClick={() => navigate("/Projects")}
                             className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49]"
@@ -54,24 +60,14 @@ const Projectbyone = () => {
 
 
                     <ul className="flex flex-col items-center justify-center space-y-4 p-0 m-0 h-full noneed">
-                        <li>
-                            <a className="text-slate-400 font-sans text-base flex items-center" href="#about">
-                                {/* <span className="nav-indicator mr-2 h-px w-4 bg-slate-400 transition-all"></span> */}
-                                <span className="nav-text hover:text-slate-200 focus-visible:text-slate-200">About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a className="text-slate-400 font-sans text-base flex items-center" href="#experience">
-                                {/* <span className="nav-indicator mr-2 h-px w-4 bg-slate-400 transition-all"></span> */}
-                                <span className="nav-text hover:text-slate-200 focus-visible:text-slate-200">Experience</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a className="text-slate-400 font-sans text-base flex items-center" href="#projects">
-                                {/* <span className="nav-indicator mr-2 h-px w-4 bg-slate-400 transition-all"></span> */}
-                                <span className="nav-text hover:text-slate-200 focus-visible:text-slate-200">Projects</span>
-                            </a>
-                        </li>
+                        {data.length !== 0 && data.index.map((item: any, key: any) => (
+                            <li key={key}>
+                                <a href={`#${item}`} className="text-slate-400 hover:text-slate-200">
+                                    {item}
+                                </a>
+                            </li>
+                        ))}
+
                     </ul>
 
                 </div>
@@ -80,74 +76,52 @@ const Projectbyone = () => {
 
 
                 {/* Contenedor principal que ocupa el 80% del ancho total */}
-                < div style={{ width: "80%", marginLeft: "20%", display: "flex", height: "100%" }}>
+                < div style={{ width: "80%", marginLeft: "20%", display: "flex", height: "100%", background: "" }}>
                     {/* Contenido central con scroll */}
-                    < div
-                        className="text-slate-400 px-4"
-                        style={{
-                            flex: "1",
-                            height: "calc(110vh - 10vh)", // Ajusta la altura para que ocupe el espacio restante
-                            overflowY: "auto", // Habilita el scroll vertical
-                            backgroundColor: "", // Aquí puedes añadir el color de fondo si es necesario
-                            display: "flex",
-                        }}
-                    >
-                        {/* Contenido dentro del contenedor con scroll */}
-                        < div style={{ flex: "1", paddingRight: "15%" }}>
-                            {/* Aquí va el contenido */}
+                    < div className="text-slate-400 px-4" style={{ flex: "1", height: "calc(110vh - 10vh)", overflowY: "auto", backgroundColor: "", display: "flex" }} >
+                        < div style={{ flex: "1", paddingRight: "15%", background: "" }}>
                             < div style={{ width: "100%", height: "10vh" }}></div >
-                            {/* Agrega aquí el contenido con múltiples párrafos */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
-                            < p className="mb-4" >
-                                A software development professional with more than two years of experience in back - end and front - end technologies.Specializes in developing scalable and maintainable solutions.Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on.Experienced in
-                            </p >
-                            {/* Agrega más contenido aquí */}
 
+                            {data && data.info ? (
+                                <>
+                                    <p id={`${data.info.ref}`} className="mb-4">
+                                        {data.info.P}
+                                    </p>
+
+                                    <div style={{ marginTop: "80px" }}>
+                                        <div className="relative group bg-white border border-gray-400 shadow-md rounded-lg overflow-hidden">
+                                            <img src={data.info.img} className="object-contain w-full h-auto" alt="aa" />
+                                        </div>
+                                    </div>
+
+                                    <p id={`${data.info.ref2}`} className="mt-12">
+                                        {data.info.p2}
+                                    </p>
+
+                                    {
+                                        data.info.images.map((item: any, key: any) => (
+                                            <div key={`img-${key}`} style={{ width: "100%", marginTop: "80px" }}>
+                                                <div className="relative group bg-white border border-gray-400 shadow-md rounded-lg overflow-hidden">
+                                                    <img
+                                                        src={`${item}`}
+                                                        className="object-contain w-full h-auto"
+                                                        alt="aa"
+                                                    />
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+
+
+                                </>
+                            ) : (<></>)}
+
+                            <div style={{ height: "110px" }}></div>
+                            {/* diseño no mover */}
                         </div >
 
                         {/* Columna lateral derecha fija dentro del contenedor principal */}
-                        < div style={{ width: "10%", backgroundColor: "", height: "calc(90vh - 10vh)", position: "sticky", right: 0 }}>
-                            {/* Aquí puedes añadir contenido para la columna derecha */}
-                        </div >
+                        < div style={{ width: "10%", backgroundColor: "", height: "calc(90vh - 10vh)", position: "sticky", right: 0 }}></div >
 
 
                     </div >
