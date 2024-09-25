@@ -1,19 +1,12 @@
 export const dataprojects = [
-    {
-        href: "",
-        name: "Savvy bucks",
-        label: "Loans and savings for business",
-        desc: "A user-friendly mobile application designed to manage both savings and business loans, tailored for the general public, with an intuitive interface",
-        srcsett: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721435707/c_cu5l1g.png 1x, https://res.cloudinary.com/dl86hv6ta/image/upload/v1721435707/c_cu5l1g.png 2x",
-        mainimg: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721435707/c_cu5l1g.png",
-    },
+
     {
         href: "https://xam.aldafa.com.mx:3000/",
         name: "Information Manager erp",
         label: "Erp system",
         desc: "Enterprise resource management system, non-commercial, modular, comprehensive and customised.",
-        srcsett: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721414801/a_sjtlua.png 1x, https://res.cloudinary.com/dl86hv6ta/image/upload/v1721414801/a_sjtlua.png 2x",
-        mainimg: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721414801/a_sjtlua.png",
+        srcsett: "/public/principalimg/aldafaerp.webp 1x, /public/principalimg/aldafaerp.webp 2x",
+        mainimg: "/public/principalimg/aldafaerp.webp",
 
     },
     {
@@ -21,8 +14,15 @@ export const dataprojects = [
         name: "Aldafa web page",
         label: "Erp system",
         desc: "Main presentation web page to publicise the personal or business brand and attract sales.",
-        srcsett: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721418599/b_mcmflx.png 1x, https://res.cloudinary.com/dl86hv6ta/image/upload/v1721418599/b_mcmflx.png 2x",
-        mainimg: "https://res.cloudinary.com/dl86hv6ta/image/upload/v1721418599/b_mcmflx.png",
+        srcsett: "/public/principalimg/aldafamain.webp 1x, /public/principalimg/aldafamain.webp 2x",
+        mainimg: "/public/principalimg/aldafamain.webp",
     },
-   
+    {
+        href: "",
+        name: "Savvy bucks",
+        label: "Loans and savings for business",
+        desc: "A user-friendly mobile application designed to manage both savings and business loans, tailored for the general public, with an intuitive interface",
+        srcsett: "/public/principalimg/savvy.webp 1x, /public/principalimg/savvy.webp 2x",
+        mainimg: "/public/principalimg/savvy.webp",
+    },
 ]
