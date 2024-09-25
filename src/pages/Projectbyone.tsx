@@ -63,7 +63,7 @@ const Projectbyone = () => {
                     <ul className="flex flex-col items-center justify-center space-y-4 p-0 m-0 h-full noneed">
                         {data.length !== 0 && data.index.map((item: any, key: any) => (
                             <li key={key}>
-                                <a href={`#${item}`} className="text-slate-400 hover:text-slate-200">
+                                <a href={`#${item}`} className="text-slate-400 hover:text-slate-200 noneed">
                                     {item}
                                 </a>
                             </li>
@@ -91,7 +91,7 @@ const Projectbyone = () => {
 
                                     <div style={{ marginTop: "80px" }}>
                                         <div className="relative group bg-white border border-gray-400 shadow-md rounded-lg overflow-hidden">
-                                            <img src={data.info.img} className="object-contain w-full h-auto" alt="aa" />
+                                            <img src={data.info.img} className="object-contain w-full h-auto" alt="aa"loading="lazy" />
                                         </div>
                                     </div>
 
@@ -107,6 +107,7 @@ const Projectbyone = () => {
                                                         src={`${item}`}
                                                         className="object-contain w-full h-auto"
                                                         alt="aa"
+                                                        loading="lazy"
                                                     />
                                                 </div>
                                             </div>

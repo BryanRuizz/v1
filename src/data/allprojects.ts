@@ -110,7 +110,7 @@ export const experienceDataDetail = [
         info: {
             P: "This is a web implementation of a real-time chat application using React for the frontend. In the application, users subscribe to a channel using Pusher, which allows them to listen and receive message events in real time. Messages sent by one user are instantly broadcast to everyone connected to that same channel.",
             ref: "Description",
-            img: "/public/chat/c3.webp",
+            img: "/chat/c3.webp",
             p2: "The backend, developed with Express, handles the creation of events and the connection to the Pusher channel. This allows any message sent by a user to be captured and transmitted to all subscribers of the channel, achieving a fluid and real-time communication.",
             ref2: "Express",
             images: [

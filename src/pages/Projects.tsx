@@ -46,7 +46,7 @@ const Projects = () => {
         <div style={{ height: "auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "", marginBottom: "50px" }}>
           <button
             onClick={() => navigate("/")}
-            className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49]"
+            className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49] phonev"
           >
             <span className="flex items-center text-white leading-normal">
               <IoIosArrowBack className="mr-1" /> Back
@@ -55,9 +55,11 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center h-full mb-12 responsivephone" style={{ justifySelf: "center", background: "" }}>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Public and personal projects</h1>
-        <h2 className=" mt-3 text-lg font-medium leading-normal text-slate-400 sm:text-xl">Redirection to pages or github repositories </h2>
+      <div className="flex flex-col items-center justify-center h-full mb-12 responsivephone" style={{ background: "" }}>
+        <div className="4/5" style={{ background: "" }}>
+          <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Public and personal projects</h1>
+          <h2 className=" mt-3 text-lg font-medium leading-normal text-slate-400 sm:text-xl">Redirection to pages or github repositories </h2>
+        </div>
       </div>
 
       <div className="min-h-screen bg-slate-900 relative">
@@ -68,14 +70,13 @@ const Projects = () => {
           {data.map((item, index) => (
 
             < div key={`${"projectId" + index}`} className="relative group bg-white border border-gray-400 shadow-md rounded-lg overflow-hidden flex flex-col transform transition-transform duration-300 hover:translate-y-[-10px] hover:border-[#7F9B8F]" >
-              <img src={`${item.Img}`} className="object-cover w-full h-64 flex-grow-0" alt={`${item.ImgDesc}`} />
+              <img src={`${item.Img}`} className="object-cover w-full h-64 flex-grow-0" alt={`${item.ImgDesc}`} loading="lazy" />
               < div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300" >
+                <div className="bg-slate-900 text-slate-400 p-1 rounded-lg absolute top-2 left-2" style={{ zIndex: "1000" }}>
+                  <p className="mb-1">{item.date}</p>
+                </div>
                 < div className="flex-grow flex items-center justify-center space-x-16 p-4" >
-
-                  <div className="bg-slate-900 text-slate-400 p-1 rounded-lg absolute top-2 left-2">
-                    <p className="mb-1">{item.date}</p>
-                  </div>
-
+                 
                   {
                     item.Uri !== "" && (
                       <a href={item.Uri} target="_blank" rel="noopener noreferrer">

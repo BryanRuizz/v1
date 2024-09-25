@@ -62,6 +62,7 @@ const ProjectsSection = () => {
                                 <img alt="Bu just info" loading="lazy" width="200" height="58" decoding="async" data-nimg="1" className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: "transparent" }}
                                     srcSet={info.srcsett}
                                     src={info.mainimg}
+                                    
                                 ></img>
                             </div>
                         </li>

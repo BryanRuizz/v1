@@ -61,15 +61,18 @@ code {
     left: 130px;
     /* width: 100% !important; */
   }
-  /* .floatback{
-    height: 10vh !important;
-  } */
+  .noneed {
+    display: none;
+  }
 }
 @media (max-width: 735px) {
   .floatbutton {
     position: absolute !important;
     top: 3.5vh !important;
     left: 120px;
+  }
+  .noneed {
+    display: none;
   }
 }
 @media (max-width: 650px) {
@@ -78,11 +81,25 @@ code {
     top: 3.5vh !important;
     left: 115px;
   }
+  .noneed {
+    display: none;
+  }
 }
-@media (max-width: 550px) {
+@media (max-width: 502px) {
   .floatbutton {
     position: absolute !important;
     top: 3.5vh !important;
-    left: 100px;
+    left: 90px;
   }
+  .noneed {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+ .phonev{
+  position: absolute !important;
+  /* top: 3.5vh !important; */
+  left: 20px !important;
+ }
 }
