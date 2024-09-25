@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import { FaGithub, FaInternetExplorer } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
@@ -7,13 +7,14 @@ import { setInf } from "../redux/PortafolioSlice";
 import { useDispatch } from "react-redux";
 import { allprojects } from "../models/projectsInterface";
 import useMousePosition from "../hooks/useMousePosition";
+import { useState } from "react";
 
 // import '../App.css';
 
 const Projects = () => {
   const position = useMousePosition(false);
   let navigate = useNavigate();
-  const [data, setData] = useState<allprojects[]>(experienceDataDetail);
+  const [data] = useState<allprojects[]>(experienceDataDetail);
   const dispatch = useDispatch();
 
   const NaviToProjectbyOne = (label: string) => {
