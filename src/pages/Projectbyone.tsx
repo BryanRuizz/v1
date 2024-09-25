@@ -4,29 +4,15 @@ import { IoIosArrowBack } from 'react-icons/io';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { RootState } from '../app/store';
+import useMousePosition from '../hooks/useMousePosition';
 
 const Projectbyone = () => {
     let navigate = useNavigate();
-    const [position, setPosition] = useState({ x: 0, y: 0 });
+    const position = useMousePosition(false); 
 
-    //#region managment position x and y
-    useEffect(() => {
-        const handleMouseMove = (event: { clientX: number; clientY: number; }) => {
-            const scrollX = window.scrollX || window.scrollX;
-            const scrollY = window.scrollY || window.scrollY;
-            setPosition({ x: event.clientX + scrollX, y: event.clientY + scrollY });
-        };
-
-        window.addEventListener('mousemove', handleMouseMove);
-
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
-    //#endregion
     const tempinfo = useSelector((state: RootState) => state.Portafolio.tempinfo);
     const [data] = useState<any>(tempinfo);//add interface
-    console.log("mira zorra", data);
+   
 
     return (
         <div className="min-h-screen bg-slate-900 relative selection:bg-teal-300 selection:text-teal-900">

@@ -6,11 +6,12 @@ import { experienceDataDetail } from "../data/allprojects";
 import { setInf } from "../redux/PortafolioSlice";
 import { useDispatch } from "react-redux";
 import { allprojects } from "../models/projectsInterface";
+import useMousePosition from "../hooks/useMousePosition";
 
 // import '../App.css';
 
 const Projects = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const position = useMousePosition(false); 
   let navigate = useNavigate();
   const [data, setData] = useState<allprojects[]>(experienceDataDetail);
   const dispatch = useDispatch();
@@ -22,22 +23,7 @@ const Projects = () => {
     navigate("/ProjectByOne");
   }
 
-  //#region managment position x and y
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const handleMouseMove = (event: { clientX: number; clientY: number; }) => {
-      // Remover el cálculo del scroll
-      setPosition({ x: event.clientX, y: event.clientY });
-    };
 
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
-  //#endregion
 
 
 

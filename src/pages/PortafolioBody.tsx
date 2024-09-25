@@ -6,9 +6,10 @@ import Footer from '../common/Footer';
 import Links from '../components/Links';
 import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css'; // for React, Vue and Svelte
+import useMousePosition from '../hooks/useMousePosition';
 
 const Portafolio = () => {
-    const [position, setPosition] = useState({ x: 0, y: 0 });
+    const position = useMousePosition(true);
     const [activeSection, setActiveSection] = useState<string>('about');
     const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
 
@@ -81,21 +82,6 @@ const Portafolio = () => {
 
     //#endregion
 
-    //#region managment position x and y
-    useEffect(() => {
-        const handleMouseMove = (event: { clientX: number; clientY: number; }) => {
-            const scrollX = window.scrollX || window.scrollX;
-            const scrollY = window.scrollY || window.scrollY;
-            setPosition({ x: event.clientX + scrollX, y: event.clientY + scrollY });
-        };
-
-        window.addEventListener('mousemove', handleMouseMove);
-
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
-    //#endregion
 
 
     const lastvisited = () => {
