@@ -8,11 +8,26 @@ import useMousePosition from '../hooks/useMousePosition';
 
 const Projectbyone = () => {
     let navigate = useNavigate();
-    const position = useMousePosition(false); 
+    const position = useMousePosition(false);
 
     const tempinfo = useSelector((state: RootState) => state.Portafolio.tempinfo);
-    const [data] = useState<any>(tempinfo);//add interface
-   
+    const [data, setData] = useState<any>(tempinfo);//add interface
+
+
+    useEffect(() => {
+        if (!data || data.length <= 0) {
+            const storedData = localStorage.getItem('projectbyone');
+            // console.log("data empty",data,storedData);
+            if (storedData) {
+                setData(JSON.parse(storedData));
+            }
+        }
+    }, [data])
+
+    const goback = () => {
+        localStorage.removeItem('projectbyone');
+        navigate("/Projects")
+    }
 
     return (
         <div className="min-h-screen bg-slate-900 relative selection:bg-teal-300 selection:text-teal-900">
@@ -35,7 +50,7 @@ const Projectbyone = () => {
 
                     <div style={{ height: "auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "", marginBottom: "50px", zIndex: "1000" }}>
                         <button
-                            onClick={() => navigate("/Projects")}
+                            onClick={() => goback()}
                             className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49]"
                         >
                             <span className="flex items-center text-white leading-normal">

@@ -11,15 +11,18 @@ import useMousePosition from "../hooks/useMousePosition";
 // import '../App.css';
 
 const Projects = () => {
-  const position = useMousePosition(false); 
+  const position = useMousePosition(false);
   let navigate = useNavigate();
   const [data, setData] = useState<allprojects[]>(experienceDataDetail);
   const dispatch = useDispatch();
 
   const NaviToProjectbyOne = (label: string) => {
     const info: any = data.find(item => item.Title === label);
+    if (!localStorage.getItem('projectbyone')) {
+      localStorage.setItem('projectbyone', JSON.stringify(info));
+    }
     dispatch(setInf(info));
-    console.log(info);
+    // console.log(info);
     navigate("/ProjectByOne");
   }
 
@@ -69,7 +72,7 @@ const Projects = () => {
                 < div className="flex-grow flex items-center justify-center space-x-16 p-4" >
 
                   <div className="bg-slate-900 text-slate-400 p-1 rounded-lg absolute top-2 left-2">
-                   <p className="mb-1">{item.date}</p>
+                    <p className="mb-1">{item.date}</p>
                   </div>
 
                   {

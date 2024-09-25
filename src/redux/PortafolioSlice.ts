@@ -19,7 +19,7 @@ export const PortafolioSlice = createSlice({
     initialState,
     reducers: {
         setInf: (state, action: PayloadAction<any[]>) => {
-            state.tempinfo = action.payload; // Actualiza el yardId en el estado con el valor seleccionado
+            state.tempinfo = action.payload; // Actualiza el tempinfo en el estado con el valor seleccionado
         },
 
 
