@@ -1,8 +1,5 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./",
-    "paths": {
-      "*": ["src/*"]
-    }
-  }
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
