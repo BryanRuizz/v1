@@ -7,10 +7,10 @@ import Links from '../components/Links';
 import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css'; // for React, Vue and Svelte
 import useMousePosition from '../hooks/useMousePosition';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const Portafolio = () => {
-    let navigate = useNavigate();
+    // let navigate = useNavigate();
     const position = useMousePosition(true);
     const [activeSection, setActiveSection] = useState<string>('about');
     const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
