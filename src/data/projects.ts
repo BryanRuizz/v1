@@ -26,3 +26,32 @@ export const dataprojects = [
         mainimg: "/principalimg/savvy.webp",
     },
 ]
+
+export const dataprojectsEsp = [
+
+    {
+        href: "https://xam.aldafa.com.mx:3000/",
+        name: "Administracion de recursos ERP",
+        label: "Erp system",
+        desc: "Sistema de gestión de recursos empresariales, no comercial, modular, completo y personalizado.",
+        srcsett: "/principalimg/aldafaerp.webp 1x, /principalimg/aldafaerp.webp 2x",
+        mainimg: "/principalimg/aldafaerp.webp",
+
+    },
+    {
+        href: "https://www.aldafa.com.mx/#/principal",
+        name: "Aldafa web page",
+        label: "Pagina principal",
+        desc: "Página web de presentación principal para dar a conocer la marca personal o empresarial y atraer ventas.",
+        srcsett: "/principalimg/aldafamain.webp 1x, /principalimg/aldafamain.webp 2x",
+        mainimg: "/principalimg/aldafamain.webp",
+    },
+    {
+        href: "",
+        name: "Savvy bucks",
+        label: "Savvy aplicacion de prestamos",
+        desc: "Una aplicación móvil fácil de usar diseñada para gestionar tanto los ahorros como los préstamos a empresas, adaptada al público en general, con una interfaz intuitiva.",
+        srcsett: "/principalimg/savvy.webp 1x, /principalimg/savvy.webp 2x",
+        mainimg: "/principalimg/savvy.webp",
+    },
+]

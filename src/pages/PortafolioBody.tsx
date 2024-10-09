@@ -7,18 +7,27 @@ import Links from '../components/Links';
 import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css'; // for React, Vue and Svelte
 import useMousePosition from '../hooks/useMousePosition';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Portafolio = () => {
-    // let navigate = useNavigate();
+    let navigate = useNavigate();
     const position = useMousePosition(true);
     const [activeSection, setActiveSection] = useState<string>('about');
     const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
+    const [localLanguage, setLocalLanguage] = useState("ENG");
 
 
 
     //#region managemet of scrolling 
     useEffect(() => {
+
+        const storedData: any = localStorage.getItem('language');
+        // console.log("data empty",storedData);
+        if (storedData || storedData === null) {
+            let local = storedData === null ? "ENG" :  JSON.parse(storedData);
+            setLocalLanguage(local);
+            // console.log("Wacha", JSON.parse(storedData));
+        }
 
         const handleScroll = () => {
             const sections = document.querySelectorAll<HTMLElement>('section');
@@ -95,14 +104,41 @@ const Portafolio = () => {
         });
     }
     const lenguage = () => {
-        notyf.error({
-            message: 'This feature is on testing',
-            duration: 1000,
+        // console.log("click language");
+        // Verificar si existe un idioma almacenado
+        let language = localStorage.getItem('language');
+        // console.log("1", language);
+        if (language) {
+            // Deserializar el valor guardado
+            language = JSON.parse(language);
 
-        });
+            // Alternar entre "ESP" y "ENG"
+            if (language === "ESP") {
+                // console.log("2 eng set");
+                localStorage.setItem('language', JSON.stringify("ENG"));
+                setLocalLanguage("ENG");
+            } else {
+                console.log("2 spn set");
+                localStorage.setItem('language', JSON.stringify("ESP"));
+                setLocalLanguage("ESP");
+            }
+        } else {
+            // Si no existe, establecer por defecto en "ESP"
+            localStorage.setItem('language', JSON.stringify("ESP"));
+            setLocalLanguage("ESP");
+        }
+        // notyf.error({
+        //     message: 'This feature is on testing',
+        //     duration: 1000, 
+
+        // });
+        // console.log("v", localStorage.getItem('language'));
     }
 
+
+    // console.log("aa", localLanguage);
     // console.log("still working...");
+    // localStorage.removeItem("language");
     return (
         <div className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
 
@@ -128,9 +164,9 @@ const Portafolio = () => {
                             <div>
                                 <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"><a href="/">Bryan Ruiz</a></h1>
                                 <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Software Engineer</h2>
-                                <p className="mt-4 max-w-xs leading-normal">I build maintainable and scalable
+                                <p className="mt-4 max-w-xs leading-normal">{localLanguage ==='ENG'?"I build maintainable and scalable":"Creo soluciones mantenibles" }
                                     <br></br>
-                                    solutions with the best quality</p>
+                                    {localLanguage ==='ENG'?"solutions with the best quality":"y escalables con la mejor calidad."}</p>
                                 {/* navegation about, experience, projects */}
 
                                 {/* Wrap elements last visited and translate  */}
@@ -162,19 +198,19 @@ const Portafolio = () => {
                                         <li onClick={() => handleNavClick('about')} >
                                             <a className="group flex items-center py-3 " href="#about">
                                                 <span className={activeSection === "about" ? "nav-indicator mr-4 h-px w-16 bg-slate-200 transition-all" : "nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"}></span>
-                                                <span className={activeSection === "about" ? "nav-text text-xs font-bold uppercase tracking-widest text-slate-200" : "nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"}>About</span>
+                                                <span className={activeSection === "about" ? "nav-text text-xs font-bold uppercase tracking-widest text-slate-200" : "nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"}> {localLanguage ==='ENG'?"About":"Acerca"}</span>
                                             </a>
                                         </li>
                                         <li onClick={() => handleNavClick('experience')}>
                                             <a className="group flex items-center py-3" href="#experience">
                                                 <span className={activeSection === "experience" ? "nav-indicator mr-4 h-px w-16 bg-slate-600 transition-all" : "nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"}></span>
-                                                <span className={activeSection === "experience" ? "nav-text text-xs font-bold uppercase tracking-widest text-slate-200" : "nav-text text-xs font-bold uppercase tracking-widest text-slate-500 nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"}>Experience</span>
+                                                <span className={activeSection === "experience" ? "nav-text text-xs font-bold uppercase tracking-widest text-slate-200" : "nav-text text-xs font-bold uppercase tracking-widest text-slate-500 nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"}> {localLanguage ==='ENG'?"Experience":"Experiencia"}</span>
                                             </a>
                                         </li>
                                         <li onClick={() => handleNavClick('projects')}>
                                             <a className="group flex items-center py-3" href="#projects">
                                                 <span className={activeSection === "projects" ? "nav-indicator mr-4 h-px w-16 bg-slate-600 transition-all" : "nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"}></span>
-                                                <span className={activeSection === "projects" ? "nav-text text-xs font-bold uppercase tracking-widest text-slate-200" : "nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"}>Projects</span>
+                                                <span className={activeSection === "projects" ? "nav-text text-xs font-bold uppercase tracking-widest text-slate-200" : "nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"}>{localLanguage ==='ENG'?"Projects":"Proyectos"}</span>
                                             </a>
                                         </li>
                                         {/* icons possible buttons and components */}
@@ -201,7 +237,7 @@ const Portafolio = () => {
                         <main id="content" className="pt-24 lg:w-1/2 lg:py-24" >
                             {/* ABOUT seccion */}
                             <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="About me">
-                                <About />
+                                <About language={localLanguage} />
                             </section>
                             {/* END ABOUT SECCION */}
 
@@ -209,13 +245,13 @@ const Portafolio = () => {
 
                             {/*START EX SECCTION */}
                             <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work experience">
-                                <Experience />
+                                <Experience language={localLanguage} />
                             </section>
                             {/* END EXperience seccion */}
 
                             {/* Project secction */}
                             <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Selected projects">
-                                <ProjectsSection />
+                                <ProjectsSection language={localLanguage} />
                             </section>
                             {/* end project seccion */}
 

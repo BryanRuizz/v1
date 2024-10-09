@@ -1,12 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ExperienceInterface } from "../models/experienceInterface";
-import { experienceData } from "../data/experienceData";
+import { experienceData, experienceDataEsp } from "../data/experienceData";
 
+interface propstypes {
+  language: string;
+}
 
-const Experience = () => {
+const Experience = ({ language }: propstypes) => {
+
   let navigate = useNavigate();
-  const [dataex] = useState<ExperienceInterface[]>(experienceData);
+  const [dataex, setDataEx] = useState<ExperienceInterface[]>(experienceData);
+
+  useEffect(() => {
+    const storedData: any = localStorage.getItem('language');
+    // console.log("language desde about", storedData,language);
+
+    if (JSON.parse(storedData) === "ENG" || language === "ENG") {
+      // console.log("entro en ingles");
+
+      setDataEx(experienceData);
+    }
+    if (JSON.parse(storedData) === "ESP" || language === "ESP") {
+      // console.log("entro en español");
+      setDataEx(experienceDataEsp);
+    }
+
+  }, [language])
+
   const route = () => {
     navigate("/Projects");
   }
@@ -68,18 +89,31 @@ const Experience = () => {
 
         </ol>
 
-
-        <div className="mt-12" >
-          <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" href="/Software_engineer_Bryan_ruiz_cv_eng.pdf" target="_blank" rel="noreferrer noopener" aria-label="View  Résumé (opens in a new tab)">
-            <span>View
-              <span className="inline-block">Résumé
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
-                  <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
-                </svg>
+        {language === "ENG" ? (
+          <div className="mt-12" >
+            <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" href="/Software_engineer_Bryan_ruiz_cv_eng.pdf" target="_blank" rel="noreferrer noopener" aria-label="View  Résumé (opens in a new tab)">
+              <span>View
+                <span className="inline-block">Résumé
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                    <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
+                  </svg>
+                </span>
               </span>
-            </span>
-          </a>
-        </div>
+            </a>
+          </div>
+        ) : (
+
+          <div className="mt-12" >
+            <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" href="/Software_engineer_Bryan_ruiz_cv_esp.pdf" target="_blank" rel="noreferrer noopener" aria-label="View  Résumé (opens in a new tab)">
+              <span>Ver
+                <span className="inline-block">Resumen
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                    <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
+                  </svg>
+                </span>
+              </span>
+            </a>
+          </div>)}
 
       </div>
     </>

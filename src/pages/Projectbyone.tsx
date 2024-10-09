@@ -12,7 +12,7 @@ const Projectbyone = () => {
 
     const tempinfo = useSelector((state: RootState) => state.Portafolio.tempinfo);
     const [data, setData] = useState<any>(tempinfo);//add interface
-
+    const [localLanguage, setLocalLanguage] = useState("ENG");
 
     useEffect(() => {
         if (!data || data.length <= 0) {
@@ -21,6 +21,12 @@ const Projectbyone = () => {
             if (storedData) {
                 setData(JSON.parse(storedData));
             }
+        }
+        const storedData: any = localStorage.getItem('language');
+        if (JSON.parse(storedData) === "ENG") {
+            setLocalLanguage("ENG");
+        }else {
+            setLocalLanguage("ESP");
         }
     }, [data])
 
@@ -54,7 +60,7 @@ const Projectbyone = () => {
                             className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49]"
                         >
                             <span className="flex items-center text-white leading-normal">
-                                <IoIosArrowBack className="mr-1" /> Back
+                                <IoIosArrowBack className="mr-1" /> {localLanguage ==="ENG"?"Back":"Atras"}
                             </span>
                         </button>
                     </div>
@@ -91,7 +97,7 @@ const Projectbyone = () => {
 
                                     <div style={{ marginTop: "80px" }}>
                                         <div className="relative group bg-white border border-gray-400 shadow-md rounded-lg overflow-hidden">
-                                            <img src={data.info.img} className="object-contain w-full h-auto" alt="aa"loading="lazy" />
+                                            <img src={data.info.img} className="object-contain w-full h-auto" alt="aa" loading="lazy" />
                                         </div>
                                     </div>
 

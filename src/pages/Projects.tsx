@@ -2,20 +2,21 @@
 import { FaGithub, FaInternetExplorer } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import { experienceDataDetail } from "../data/allprojects";
+import { experienceDataDetail, experienceDataDetailesp } from "../data/allprojects";
 import { setInf } from "../redux/PortafolioSlice";
 import { useDispatch } from "react-redux";
 import { allprojects } from "../models/projectsInterface";
 import useMousePosition from "../hooks/useMousePosition";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // import '../App.css';
 
 const Projects = () => {
   const position = useMousePosition(false);
   let navigate = useNavigate();
-  const [data] = useState<allprojects[]>(experienceDataDetail);
+  const [data,setData] = useState<allprojects[]>(experienceDataDetail);
   const dispatch = useDispatch();
+  const [localLanguage, setLocalLanguage] = useState("ENG");
 
   const NaviToProjectbyOne = (label: string) => {
     const info: any = data.find(item => item.Title === label);
@@ -27,7 +28,22 @@ const Projects = () => {
     navigate("/ProjectByOne");
   }
 
+  useEffect(() => {
+    const storedData: any = localStorage.getItem('language');
+    // console.log("language desde about", storedData,language);
 
+    if (JSON.parse(storedData) === "ENG" ) {
+      // console.log("entro en ingles");
+      setLocalLanguage("ENG");
+      setData(experienceDataDetail);
+    }
+    if (JSON.parse(storedData) === "ESP" ) {
+      // console.log("entro en español");
+      setLocalLanguage("ESP");
+      setData(experienceDataDetailesp);
+    }
+
+  }, [])
 
 
 
@@ -49,7 +65,7 @@ const Projects = () => {
             className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49] phonev"
           >
             <span className="flex items-center text-white leading-normal">
-              <IoIosArrowBack className="mr-1" /> Back
+              <IoIosArrowBack className="mr-1" />{localLanguage === "ENG"?"Back":"Atras"}
             </span>
           </button>
         </div>
@@ -57,8 +73,8 @@ const Projects = () => {
 
       <div className="flex flex-col items-center justify-center h-full mb-12 responsivephone" style={{ background: "" }}>
         <div className="4/5" style={{ background: "" }}>
-          <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">Public and personal projects</h1>
-          <h2 className=" mt-3 text-lg font-medium leading-normal text-slate-400 sm:text-xl">Redirection to pages or github repositories </h2>
+          <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">{localLanguage ==="ENG"?"Public and personal projects":"Proyectos públicos y personales"}</h1>
+          <h2 className=" mt-3 text-lg font-medium leading-normal text-slate-400 sm:text-xl">{localLanguage ==="ENG"?"Redirection to pages or github repositories":"Redirección a páginas o repositorios de github"}</h2>
         </div>
       </div>
 
