@@ -4,16 +4,16 @@ import Experience from '../common/Experience';
 import ProjectsSection from '../common/ProjectsSection';
 import Footer from '../common/Footer';
 import Links from '../components/Links';
-import { Notyf } from 'notyf';
+// import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css'; // for React, Vue and Svelte
 import useMousePosition from '../hooks/useMousePosition';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Portafolio = () => {
-    // let navigate = useNavigate();
+    let navigate = useNavigate();
     const position = useMousePosition(true);
     const [activeSection, setActiveSection] = useState<string>('about');
-    const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
+    // const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
     const [localLanguage, setLocalLanguage] = useState("ENG");
 
 
@@ -96,12 +96,12 @@ const Portafolio = () => {
 
 
     const lastvisited = () => {
-        // navigate("/Map");
-        notyf.error({
-            message: 'This feature is on testing',
-            duration: 1000,
+        navigate("/Map");
+        // notyf.error({
+        //     message: 'This feature is on testing',
+        //     duration: 1000,
 
-        });
+        // });
     }
     const lenguage = () => {
         // console.log("click language");
