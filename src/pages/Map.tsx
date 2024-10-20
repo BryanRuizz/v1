@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { LatLngExpression } from 'leaflet';
 import { IoIosArrowBack } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
@@ -17,14 +17,27 @@ const defaultIcon = L.icon({
     shadowSize: [41, 41]
 });
 
-
 L.Marker.prototype.options.icon = defaultIcon;
 
+interface SetViewOnClickProps {
+    location: LatLngExpression | null; // Aquí definimos el tipo
+}
+
+const SetViewOnClick = ({ location }: SetViewOnClickProps) => {
+    const map = useMap();
+    useEffect(() => {
+        if (location) {
+            map.setView(location, map.getZoom());
+        }
+    }, [location, map]);
+
+    return null;
+};
 
 const Map = () => {
-    const [location, setLocation] = useState<LatLngExpression | any>([25.5427769, -103.4068786]);
+    const [location, setLocation] = useState<LatLngExpression | null>([25.5427769, -103.4068786]);
     const [city, setCity] = useState("Searching ");
-    const isFetched = useRef(false); // Ref para controlar la petición
+    const isFetched = useRef(false);
     let navigate = useNavigate();
     const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
 
@@ -33,9 +46,7 @@ const Map = () => {
     }, []);
 
     const fetchLocation = async () => {
-        // Verifica si ya se ha hecho la petición
         if (isFetched.current) {
-            // console.log("La petición ya se hizo, no se repetirá.", isFetched);
             return;
         }
 
@@ -48,20 +59,13 @@ const Map = () => {
                 cityName: thiscity,
                 cityLocation: cord
             }
-            // console.log("mi ciudad", info);
             const apires = await updatecity(info);
-            console.log("Response api",apires);
-            // const [lat, lng] = data.loc.split(',');
-            // setLocation([parseFloat(lat), parseFloat(lng)]);
-            // console.log("Petición realizada",data);
-
-            // Cambia la ref para indicar que la petición ya se hizo
+            console.log("apirest", apires);
             isFetched.current = true;
         } catch (error) {
             console.error("Error obteniendo ubicación por IP: ", error);
         }
     };
-
 
     const getcities = async () => {
         try {
@@ -69,30 +73,23 @@ const Map = () => {
             if (res) {
                 let ress = res.data;
 
-                const parts = ress.split(/,(.+)/); // Divide en dos partes usando una expresión regular
-                const location = parts[0].trim() + ',' + parts[1].trim().split(',')[0]; // Combina el nombre de la ciudad con 'Mx'
-                const coordinates = parts[1].trim().split(',').slice(1).join(','); // Obtiene las coordenadas
+                const parts = ress.split(/,(.+)/);
+                const location = parts[0].trim() + ',' + parts[1].trim().split(',')[0];
+                const coordinates = parts[1].trim().split(',').slice(1).join(',');
 
-                // console.log("parts:", parts);
-                // console.log("Ubicación:", location);
                 setCity(location);
-                // console.log("Coordenadas:", coordinates);
                 const coordsArray = coordinates.split(',').map(Number);
                 setLocation(coordsArray);
                 fetchLocation();
-                // setCity(res.data);
-                // console.log("mira tu ciudad", res.data);
             }
         } catch (error) {
             notyf.error({
                 message: 'Not was possible get last city',
                 duration: 1000,
-
             });
             console.error("f", error);
         }
     }
-
 
     return (
         <div className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 min-h-screen w-full flex flex-col justify-start items-center">
@@ -111,28 +108,29 @@ const Map = () => {
                 <MapContainer
                     center={location}
                     zoom={12}
-                    className="h-[400px] sm:h-[500px] w-11/12 sm:w-10/12 lg:w-9/12"
+                    style={{ height: '500px', width: '80%' }} // Ajusta el tamaño aquí
                 >
                     <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     />
+                    <SetViewOnClick location={location} />
                     <Marker position={location}>
                         <Popup>
                             Esta es tu ubicación aproximada.
                         </Popup>
                     </Marker>
                 </MapContainer>
+
             ) : (
                 <p>Obteniendo ubicación...</p>
             )}
 
             <div className=" bottom-8 left-12 mt-12 ">
-                <h2 className='mt-2 text-lg font-medium text-white sm:text-xl'>In testing</h2>
-                <h2 className="mt-3 text-lg font-medium text-slate-400 sm:text-xl">Last visited: {`${city}`}</h2>
+                {/* <h2 className='mt-2 text-lg font-medium text-white sm:text-xl'>In testing</h2> */}
+                <h2 className="mt-3 text-lg font-medium text-white sm:text-xl">Last visited: {`${city}`}</h2>
             </div>
         </div>
-
     );
 }
 
