@@ -50,7 +50,7 @@ const Map = () => {
             }
             // console.log("mi ciudad", info);
             const apires = await updatecity(info);
-            // console.log("Response api",apires);
+            console.log("Response api",apires);
             // const [lat, lng] = data.loc.split(',');
             // setLocation([parseFloat(lat), parseFloat(lng)]);
             // console.log("Petición realizada",data);
