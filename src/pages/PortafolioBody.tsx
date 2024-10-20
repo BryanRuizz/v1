@@ -5,7 +5,7 @@ import ProjectsSection from '../common/ProjectsSection';
 import Footer from '../common/Footer';
 import Links from '../components/Links';
 // import { Notyf } from 'notyf';
-import 'notyf/notyf.min.css'; // for React, Vue and Svelte
+
 import useMousePosition from '../hooks/useMousePosition';
 import { useNavigate } from 'react-router-dom';
 
