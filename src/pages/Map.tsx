@@ -40,9 +40,18 @@ const Map = () => {
     const isFetched = useRef(false);
     let navigate = useNavigate();
     const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
+    const [localLanguage, setLocalLanguage] = useState("ENG");
+
 
     useEffect(() => {
         getcities();
+        const storedData: any = localStorage.getItem('language');
+        // console.log("proyectbyone", storedData);
+        if (JSON.parse(storedData) === "ESP") {
+            setLocalLanguage("ESP");
+        } else {
+            setLocalLanguage("ENG");
+        }
     }, []);
 
     const fetchLocation = async () => {
@@ -99,7 +108,7 @@ const Map = () => {
                     className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49]"
                 >
                     <span className="flex items-center text-white">
-                        <IoIosArrowBack className="mr-1" />Back
+                        <IoIosArrowBack className="mr-1" /> {localLanguage === "ENG" ? "Back" : "Atras"}
                     </span>
                 </button>
             </div>
@@ -117,18 +126,19 @@ const Map = () => {
                     <SetViewOnClick location={location} />
                     <Marker position={location}>
                         <Popup>
-                            Esta es tu ubicación aproximada.
+                        {localLanguage === "ENG" ? "This is your most approximate location" : " Esta es tu ubicación aproximada."}
+                           
                         </Popup>
                     </Marker>
                 </MapContainer>
 
             ) : (
-                <p>Obteniendo ubicación...</p>
+                <p>{localLanguage === "ENG" ? "Getting location..." : "Obteniendo ubicación..."}</p>
             )}
 
             <div className=" bottom-8 left-12 mt-12 ">
                 {/* <h2 className='mt-2 text-lg font-medium text-white sm:text-xl'>In testing</h2> */}
-                <h2 className="mt-3 text-lg font-medium text-white sm:text-xl">Last visited: {`${city}`}</h2>
+                <h2 className="mt-3 text-lg font-medium text-white sm:text-xl">{localLanguage === "ENG" ? "Last visited:" : "Última visita:"} {`${city}`}</h2>
             </div>
         </div>
     );
