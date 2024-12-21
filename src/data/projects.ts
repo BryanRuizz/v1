@@ -18,8 +18,8 @@ export const dataprojects = [
         mainimg: "/principalimg/aldafamain.webp",
     },
     {
-        href: "",
-        name: "Savvy bucks",
+        href: "https://play.google.com/store/apps/details?id=aldafa.FinancialBox",
+        name: "FinancialBox",
         label: "Loans and savings for business",
         desc: "A user-friendly mobile application designed to manage both savings and business loans, tailored for the general public, with an intuitive interface",
         srcsett: "/principalimg/savvy.webp 1x, /principalimg/savvy.webp 2x",
