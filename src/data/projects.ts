@@ -1,6 +1,15 @@
 export const dataprojects = [
 
     {
+        href: "https://siticsoftware.com/",
+        name: "Data Management System",
+        label: "Erp system",
+        desc: "Custom software development, IT consulting, Technical support, modular.",
+        srcsett: "/principalimg/sitic.webp 1x, /principalimg/sitic.webp 2x",
+        mainimg: "/principalimg/sitic.webp",
+
+    },
+    {
         href: "https://xam.aldafa.com.mx:3000/",
         name: "Information Manager erp",
         label: "Erp system",
@@ -28,7 +37,16 @@ export const dataprojects = [
 ]
 
 export const dataprojectsEsp = [
+    
+    {
+        href: "https://siticsoftware.com/",
+        name: "Sistena administrador de datos",
+        label: "Erp system",
+        desc: "Consultoria de software hecho a la medida, soporte de tickets,erp modular comercial",
+        srcsett: "/principalimg/sitic.webp 1x, /principalimg/sitic.webp 2x",
+        mainimg: "/principalimg/sitic.webp",
 
+    },
     {
         href: "https://xam.aldafa.com.mx:3000/",
         name: "Administracion de recursos ERP",

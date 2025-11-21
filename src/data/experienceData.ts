@@ -1,6 +1,31 @@
 export const experienceData = [
     {
-        ariallabelDate: "2024 to Present",
+        ariallabelDate: "January 2025 to August 2025",
+        Sdate: "January 2025 — August 2025",
+        Shref: "https://siticsoftware.com/",
+        ariallabelref: "Software Engineer, Accessibility at sitic (opens in a new tab)",
+        position: "Analyst Developer",
+        companyname: "Sitic",
+        descriptionjob: "As a Full Stack Developer, I work within agile Scrum teams, contributing to the analysis, design, and development of user stories while applying best practices such as TDD, DDD, and clean architecture. I develop solutions using Angular, C#, .NET, SQL Server, TypeScript, and React, and build microservices and microfrontends in multirepo environments. I manage workflows with Git, use Docker for development and deployment environments, apply cybersecurity and encryption practices, and implement responsive interfaces based on UI/UX designs. Additionally, I handle debugging, ticket resolution, and continuous improvement initiatives to optimize software performance and processes.",
+        items: [
+            "Angular",
+            "TypeScript",
+            "C# Asp .net core 5>",
+            "React",
+            "Module Federation",
+            "Node js",
+            "SQL Serve",
+            "Microservices",
+            "MicroFrontends",
+            "Docker",
+            "Git",
+            "DDD, Clean architect",
+            "jira"
+            
+        ]
+    },
+    {
+        ariallabelDate: "April 2023 to August 2024",
         Sdate: "April 2023 — August 2024",
         Shref: "https://xam.aldafa.com.mx:3000/",
         ariallabelref: "Software Engineer, Accessibility at Aldafa (opens in a new tab)",
@@ -28,7 +53,7 @@ export const experienceData = [
         Sdate: "Jan 2022 — Dec 2022",
         Shref: "",
         ariallabelref: "DevOps Engineer, Accessibility at DevOps UTLD (opens in a new tab)",
-        position: "DevOps Engineer ·",
+        position: "Intern DevOps Engineer ·",
         companyname: "UTLD",
         descriptionjob: "Managed services using AWS EC2 and gained knowledge in DevOps development, implementing CI/CD practices with Jenkins. Collaborated with stakeholders to identify and document requirements, ensuring maintainability and scalability of code following SOLID principles. Technical skills include Ubuntu 18.04, Linux, PHP, Node.js, and CodeIgniter. I built and maintained custom modules and solutions, deploying securely to improve the user experience by contributing throughout the development lifecycle. I ensured the use of software quality best practices, managing critical incidents with ServiceNow to maintain service continuity.",
         items: [
@@ -66,6 +91,31 @@ export const experienceData = [
 ]
 
 export const experienceDataEsp = [
+    {
+        ariallabelDate: "Enero 2025 a agosto 2025",
+        Sdate: "Enero 2025 — Agosto 2025",
+        Shref: "https://siticsoftware.com/",
+        ariallabelref: "Software Engineer, Accessibility at sitic (opens in a new tab)",
+        position: "Desarrollador analista",
+        companyname: "Sitic",
+        descriptionjob: "Como Full Stack Developer participo en equipos ágiles Scrum, colaborando en el análisis, diseño y desarrollo de historias de usuario con buenas prácticas como TDD, DDD y arquitectura limpia. Trabajo con Angular, C#, .NET, SQL Server, TypeScript y React, desarrollando microservicios y microfrontends en entornos multirepo. Gestiono flujos de trabajo con Git, uso Docker para entornos de desarrollo y despliegue, aplico prácticas de ciberseguridad, integro interfaces basadas en diseños UI/UX y aseguro su responsividad. Además, realizo debugging, atención de tickets y propongo mejoras continuas para optimizar procesos y rendimiento del software.",
+        items: [
+            "Angular",
+            "TypeScript",
+            "C# Asp .net core 5>",
+            "React",
+            "Module Federation",
+            "Node js",
+            "SQL Serve",
+            "Microservices",
+            "MicroFrontends",
+            "Docker",
+            "Git",
+            "DDD, Clean architect",
+            "jira"
+            
+        ]
+    },
     {
         ariallabelDate: "2024 to Present",
         Sdate: "Abril 2023 — Agosto 2024",
