@@ -1,0 +1,21 @@
+{
+  "output": {
+    "filePath": "repomix-output.xml",
+    "style": "xml",
+    "parsable": true
+  },
+  "include": [],
+  "exclude": [
+    "node_modules/**",
+    ".git/**",
+    "dist/**",
+    "build/**",
+    "**/*.svg",
+    "**/*.png",
+    "**/*.jpg",
+    "**/*.jpeg",
+    "**/*.ico",
+    "package-lock.json",
+    "yarn.lock"
+  ]
+}

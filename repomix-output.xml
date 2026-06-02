@@ -1,0 +1,2490 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+ 
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+public/
+  chat/
+    c1.webp
+    c2.webp
+    c3.webp
+    c4.webp
+    c5.webp
+  csharp/
+    c1.webp
+    c2.webp
+    c3.webp
+    c4.webp
+    c5.webp
+    c6.webp
+  csyangular/
+    c1.webp
+    c2.webp
+    c3.webp
+    c4.webp
+    c5.webp
+    c6.webp
+    c7.webp
+  exjsmovies/
+    c1.webp
+    c10.webp
+    c2.webp
+    c3.webp
+    c4.webp
+    c5.webp
+    c6.webp
+    c7.webp
+    c8.webp
+    c9.webp
+  principalimg/
+    aldafaerp.webp
+    aldafamain.webp
+    algoritmia.webp
+    chat.webp
+    crossfit api.webp
+    csharp.webp
+    moviesapp.webp
+    savvy.webp
+    sitic.webp
+    tvshows.webp
+  Br_logo-ico.ico
+  logoBr.png
+  Software_engineer_Bryan_ruiz_cv_eng.pdf
+  Software_engineer_Bryan_ruiz_cv_esp.pdf
+  vite.svg
+src/
+  app/
+    hooks.ts
+    store.ts
+  assets/
+    react.svg
+  common/
+    About.tsx
+    api.ts
+    Experience.tsx
+    Footer.tsx
+    ProjectsSection.tsx
+  components/
+    Links.tsx
+  data/
+    components/
+      aboutinfo.ts
+    allprojects.ts
+    experienceData.ts
+    links.ts
+    projects.ts
+  hooks/
+    useMousePosition.ts
+  models/
+    experienceInterface.ts
+    linksInterface.tsx
+    projectsInterface.ts
+  pages/
+    Error404.tsx
+    Map.tsx
+    PortafolioBody.tsx
+    Projectbyone.tsx
+    Projects.tsx
+  redux/
+    PortafolioSlice.ts
+  services/
+    MapServices.ts
+  App.css
+  App.tsx
+  index.css
+  main.tsx
+  vite-env.d.ts
+.eslintrc.cjs
+.gitignore
+google8ec384a935b15e75.html
+index.html
+package.json
+pnpm-workspace.yaml
+README.md
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+vercel.json
+vite.config.ts
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="pnpm-workspace.yaml">
+allowBuilds:
+  esbuild: true
+</file>
+
+<file path="public/vite.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 257"><defs><linearGradient id="IconifyId1813088fe1fbc01fb466" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%"><stop offset="0%" stop-color="#41D1FF"></stop><stop offset="100%" stop-color="#BD34FE"></stop></linearGradient><linearGradient id="IconifyId1813088fe1fbc01fb467" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%"><stop offset="0%" stop-color="#FFEA83"></stop><stop offset="8.333%" stop-color="#FFDD35"></stop><stop offset="100%" stop-color="#FFA800"></stop></linearGradient></defs><path fill="url(#IconifyId1813088fe1fbc01fb466)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"></path><path fill="url(#IconifyId1813088fe1fbc01fb467)" d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"></path></svg>
+</file>
+
+<file path="src/app/hooks.ts">
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import type { RootState, AppDispatch } from './store';
+
+// Use throughout your app instead of plain `useDispatch` and `useSelector`
+export const useAppDispatch = () => useDispatch<AppDispatch>();
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+</file>
+
+<file path="src/assets/react.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="35.93" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228"><path fill="#00D8FF" d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345a134.17 134.17 0 0 1 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86Z"></path></svg>
+</file>
+
+<file path="src/common/api.ts">
+import axios from "axios";
+// import { useAppSelector } from "../app/hooks";
+
+export default axios.create({
+  baseURL: "https://apirest2.vercel.app/api/v1/workouts",  //API de produccion
+ 
+  headers: {
+    "Content-type": "application/json",
+  }
+});
+</file>
+
+<file path="src/data/components/aboutinfo.ts">
+export const abouteng = [
+    {
+        p1: "A software development professional with more than two years of experience in back-end and front-end technologies.",
+        p2: "  Specializes in developing scalable and maintainable solutions.    Passionate about continually learning and improving, which has allowed to enhance performance and safety in the projects I have worked on. Experienced in",
+        p3: "raising requirements, designing and developing software,",
+        w1: "performing",
+        w2: "unit tests",
+        w3: "and,",
+        w4: "resolving incidents",
+        w5: " always following",
+        w6: "quality standards"
+
+    }
+]
+
+export const aboutesp = [
+    {
+        p1: "Profesional del desarrollo de software con más de dos años de experiencia en tecnologías back-end y front-end.",
+        p2: "  Especializado en el desarrollo de soluciones escalables y mantenibles.    Apasionado por aprender y mejorar continuamente, lo que me ha permitido mejorar el rendimiento y la seguridad en los proyectos en los que he trabajado. Experiencia en",
+        p3: "Planteamiento de requisitos, diseño y desarrollo de software,",
+        w1: "rendimiento",
+        w2: "unit tests",
+        w3: "y,",
+        w4: "resolución de incidencias",
+        w5: " siempre siguiendo",
+        w6: "normas de calidad"
+    }
+]
+</file>
+
+<file path="src/hooks/useMousePosition.ts">
+import { useState, useEffect } from 'react';
+
+const useMousePosition = (includeScroll: boolean = false) => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (event: { clientX: number; clientY: number; }) => {
+      const scrollX = includeScroll ? window.scrollX : 0;
+      const scrollY = includeScroll ? window.scrollY : 0;
+      setPosition({ x: event.clientX + scrollX, y: event.clientY + scrollY });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, [includeScroll]); 
+
+  return position;
+};
+
+export default useMousePosition;
+</file>
+
+<file path="src/models/experienceInterface.ts">
+export interface ExperienceInterface{
+ariallabelDate: string,
+Sdate: string,
+Shref: string,
+ariallabelref: string,
+position: string,
+companyname: string,
+descriptionjob: string,
+items:string[],
+ }
+</file>
+
+<file path="src/models/linksInterface.tsx">
+export interface UrlsInteface {
+    link: string,
+    name: string,
+    svg: string,
+}
+</file>
+
+<file path="src/services/MapServices.ts">
+import api from "../common/api";
+
+
+
+export const getcity = async () => {
+    const response = await api.get(`/cities`)
+    return response.data;
+}
+
+
+export const updatecity = async (info:any) => {
+    const response = await api.patch(`/1/cities`,info)
+    return response.data;
+}
+</file>
+
+<file path="src/vite-env.d.ts">
+/// <reference types="vite/client" />
+</file>
+
+<file path=".eslintrc.cjs">
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['react-refresh'],
+  rules: {
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+    ],
+  },
+}
+</file>
+
+<file path="google8ec384a935b15e75.html">
+google-site-verification: google8ec384a935b15e75.html
+</file>
+
+<file path="tsconfig.app.json">
+{
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
+</file>
+
+<file path="tsconfig.node.json">
+{
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noEmit": true
+  },
+  "include": ["vite.config.ts"]
+}
+</file>
+
+<file path="vite.config.ts">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+</file>
+
+<file path="src/data/links.ts">
+export const datalinks = [
+    {
+        link: "https://github.com/BryanRuizz",
+        name: "GitHub",
+        svg: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+    },
+    {
+        link: "https://www.linkedin.com/in/bryan-ruiz-b992b71b9/",
+        name: "LinkedIn",
+        svg: "M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+
+    }, {
+        link: "mailto:bryanruiz2468@gmail.com",
+        name: "CodePen",
+        svg: "M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+
+    }
+]
+</file>
+
+<file path="src/pages/Error404.tsx">
+import { useNavigate } from 'react-router-dom';
+
+const Error404 = () => {
+    let navigate = useNavigate();
+
+    const handleGoHome = () => {
+        navigate('/');
+    };
+
+    return (
+        <div className="min-h-screen bg-slate-900 flex flex-col items-center justify-center text-white">
+            <h1 className="text-8xl font-bold mb-8">404</h1>
+            <p className="text-4xl mb-8">Oops! The page you're looking for doesn't exist.</p>
+            <button
+                onClick={handleGoHome}
+                className="py-4 px-6 rounded  font-sans bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 rounded-l transition-colors duration-300 hover:bg-[#082f49]"
+            >
+                <p style={{fontSize:18, font:"sans"}}>Go to Home</p>
+            </button>
+        </div>
+    )
+}
+
+export default Error404
+</file>
+
+<file path="src/redux/PortafolioSlice.ts">
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
+
+
+type inistateType = {
+    tempinfo: any[],
+};
+
+
+
+const initialState:inistateType = {
+    tempinfo: [],
+
+}
+
+export const PortafolioSlice = createSlice({
+
+    name: "portafolioS",
+    initialState,
+    reducers: {
+        setInf: (state, action: PayloadAction<any[]>) => {
+            state.tempinfo = action.payload; // Actualiza el tempinfo en el estado con el valor seleccionado
+        },
+
+
+    }
+
+})
+export const { setInf } = PortafolioSlice.actions; // this is for use funct to save in store 
+export default PortafolioSlice.reducer;
+</file>
+
+<file path="src/App.css">
+.App {
+  background: #0f172a;
+  height: 100%;
+  width: 100%;
+}
+
+/* Projects css */
+
+.grid {
+  --gap: 8px;
+  display: flex;
+  margin-left: calc(var(--gap)* -1);
+  width: auto;
+  height: 100px;
+  padding-right: 8px;
+  padding-left: 4px;
+}
+.column {
+  
+  padding-left: var(--gap);
+  background-clip: padding-box;
+}
+</file>
+
+<file path="src/main.tsx">
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'
+import { Provider } from 'react-redux'
+import { store } from './app/store.ts'
+import { BrowserRouter } from 'react-router-dom'
+import 'notyf/notyf.min.css'; // for React, Vue and Svelte
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>
+  </React.StrictMode>,
+)
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path="README.md">
+# React + TypeScript + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+</file>
+
+<file path="src/app/store.ts">
+import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import PortafolioSlice from '../redux/PortafolioSlice';
+
+
+
+export const store = configureStore({
+  reducer: {
+    Portafolio: PortafolioSlice,
+  },
+});
+
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>;
+export type AppThunk<ReturnType = void> = ThunkAction<
+  ReturnType,
+  RootState,
+  unknown,
+  Action<string>
+>;
+</file>
+
+<file path="src/common/About.tsx">
+import { useEffect, useState } from "react"
+import { abouteng, aboutesp } from "../data/components/aboutinfo";
+
+interface propstypes {
+    language: string;
+}
+
+const About = ({ language }: propstypes) => {
+    const [data, setData] = useState<any>(abouteng);
+    // setData(abouteng);
+    useEffect(() => {
+
+        const storedData: any = localStorage.getItem('language');
+        // console.log("language desde about", storedData,language);
+
+        if (JSON.parse(storedData) === "ENG" || language === "ENG") {
+            // console.log("entro en ingles");
+
+            setData(abouteng);
+        }
+        if (JSON.parse(storedData) === "ESP" || language === "ESP") {
+            // console.log("entro en español");
+            setData(aboutesp);
+        }
+
+    }, [language])
+
+    return (
+        <>
+
+            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
+            </div>
+            <div>
+                {
+                    data.map((info: any, index: any) => (
+                        <p className="mb-4 " key={`p-${index}`}>
+                            {info.p1} {' '}  {info.p2} {' '}
+                            <span className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" rel="noreferrer noopener" aria-label="">{info.p3}</span>
+                            {' '}
+                            <span className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" aria-label="advertising agency">{info.w1}, {info.w2}</span>
+                            {' '}{info.w3} {' '}
+                            <span className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" aria-label="">{info.w4}</span>
+                            {' '} {info.w5}{' '}
+                            <span className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" aria-label="digital product studio (opens in a new tab)">{info.w6}</span>
+                            .
+                        </p>
+                    ))
+                }
+                <p className="mb-4 text-base text-slate-200">
+                    {' '}
+                    <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="aasassas/" target="_blank" rel="noreferrer noopener" aria-label="Klaviyo (opens in a new tab)"> </a>
+
+                    <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="https://app" target="_blank" rel="noreferrer noopener" aria-label="online video course (opens in a new tab)"> </a>
+                    {' '}
+                </p>
+
+            </div>
+
+        </>
+    )
+}
+
+export default About
+</file>
+
+<file path="src/common/Footer.tsx">
+const Footer = () => {
+  
+  return (
+    <footer className="max-w-md pb-18 text-sm text-slate-500 sm:pb-0" >
+    <p>Powered by React, Redux Toolkit,<br/>
+       tailwindcss, VScode, brittany chiang</p>
+  </footer>
+  )
+}
+
+export default Footer
+</file>
+
+<file path="src/components/Links.tsx">
+import { useState } from 'react'
+import { datalinks } from '../data/links';
+import { UrlsInteface } from '../models/linksInterface';
+
+
+const Links = () => {
+    const [data] = useState<UrlsInteface[]>(datalinks);
+    // console.log("data", datalinks);
+
+    return (
+        <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
+
+            {
+                data.map((info, index) => (
+                    <li className="mr-5 text-xs shrink-0" key={index}>
+                        <a className="block hover:text-slate-200" href={info.link} target="_blank" rel="noreferrer noopener" aria-label={info.name+" "+ "(opens in a new tab)"} title={info.name}>
+                            <span className="sr-only">{info.name}</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox={info.name === "GitHub"? "0 0 16 16":"0 0 24 24"} fill="currentColor" className="h-7 w-7" aria-hidden="true">
+                                <path d={info.svg}></path>
+                            </svg>
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+    )
+}
+
+export default Links
+</file>
+
+<file path="tsconfig.json">
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
+</file>
+
+<file path="src/data/experienceData.ts">
+export const experienceData = [
+    {
+        ariallabelDate: "January 2025 to August 2025",
+        Sdate: "January 2025 — August 2025",
+        Shref: "https://siticsoftware.com/",
+        ariallabelref: "Software Engineer, Accessibility at sitic (opens in a new tab)",
+        position: "Analyst Developer",
+        companyname: "Sitic",
+        descriptionjob: "As a Full Stack Developer, I work within agile Scrum teams, contributing to the analysis, design, and development of user stories while applying best practices such as TDD, DDD, and clean architecture. I develop solutions using Angular, C#, .NET, SQL Server, TypeScript, and React, and build microservices and microfrontends in multirepo environments. I manage workflows with Git, use Docker for development and deployment environments, apply cybersecurity and encryption practices, and implement responsive interfaces based on UI/UX designs. Additionally, I handle debugging, ticket resolution, and continuous improvement initiatives to optimize software performance and processes.",
+        items: [
+            "Angular",
+            "TypeScript",
+            "C# Asp .net core 5>",
+            "React",
+            "Module Federation",
+            "Node js",
+            "SQL Serve",
+            "Microservices",
+            "MicroFrontends",
+            "Docker",
+            "Git",
+            "DDD, Clean architect",
+            "jira"
+            
+        ]
+    },
+    {
+        ariallabelDate: "April 2023 to August 2024",
+        Sdate: "April 2023 — August 2024",
+        Shref: "https://xam.aldafa.com.mx:3000/",
+        ariallabelref: "Software Engineer, Accessibility at Aldafa (opens in a new tab)",
+        position: "Software Engineer ·",
+        companyname: "Aldafa",
+        descriptionjob: "Build and maintain custom modules and solutions, deploying securely with React and Vue to improve user experience. I ensure the use of software quality best practices, managing critical incidents with ServiceNow and maintaining service continuity. My skills include database management, full stack web development, and code refactoring, always focused on maintainability and scalability following SOLID principles.",
+        items: [
+            "JavaScript",
+            "TypeScript",
+            "C# Asp .net core",
+            "React",
+            "Vue.js",
+            "Node js",
+            "SQL Server",
+            "Python",
+            "Docker",
+            "Git",
+            "Jest",
+            "Selenium"
+            
+        ]
+    },
+    {
+        ariallabelDate: "January 2022 to December 2022",
+        Sdate: "Jan 2022 — Dec 2022",
+        Shref: "",
+        ariallabelref: "DevOps Engineer, Accessibility at DevOps UTLD (opens in a new tab)",
+        position: "Intern DevOps Engineer ·",
+        companyname: "UTLD",
+        descriptionjob: "Managed services using AWS EC2 and gained knowledge in DevOps development, implementing CI/CD practices with Jenkins. Collaborated with stakeholders to identify and document requirements, ensuring maintainability and scalability of code following SOLID principles. Technical skills include Ubuntu 18.04, Linux, PHP, Node.js, and CodeIgniter. I built and maintained custom modules and solutions, deploying securely to improve the user experience by contributing throughout the development lifecycle. I ensured the use of software quality best practices, managing critical incidents with ServiceNow to maintain service continuity.",
+        items: [
+            "JavaScript",
+            "PHP",
+            "HTML & CSS",
+            "Codeigniter",
+            "AWS EC2",
+            "Ubunto 18.4/22",
+            "SQL Server",
+            "Jenkins",
+            "Git",
+            "GitHub"
+        ]
+    },
+    {
+        ariallabelDate: "May 2019 to December 2019",
+        Sdate: "May 2019 — Dec 2019",
+        Shref: "https://www.imticglobalgroup.com/",
+        ariallabelref: "Associate Intern at IMTIC (opens in a new tab)",
+        position: "Associate Intern ·",
+        companyname: "IMTIC",
+        descriptionjob: "Participated in development processes, managing workflow and adopting cutting-edge technologies. Leveraged agile development methodologies to streamline projects and improve efficiency. Demonstrated proficiency in multiple programming languages and utilized low-code platforms to expedite delivery. Focused on maintaining best practices and improving team collaboration throughout the development lifecycle.",
+        items: [
+            "Bizagi",
+            "Javascript",
+            "Scrum",
+            "Algorithms",
+            "SQL Server",
+            "Git",
+            "Appian",
+            "Low-code"
+        ]
+    }
+]
+
+export const experienceDataEsp = [
+    {
+        ariallabelDate: "Enero 2025 a agosto 2025",
+        Sdate: "Enero 2025 — Agosto 2025",
+        Shref: "https://siticsoftware.com/",
+        ariallabelref: "Software Engineer, Accessibility at sitic (opens in a new tab)",
+        position: "Desarrollador analista",
+        companyname: "Sitic",
+        descriptionjob: "Como Full Stack Developer participo en equipos ágiles Scrum, colaborando en el análisis, diseño y desarrollo de historias de usuario con buenas prácticas como TDD, DDD y arquitectura limpia. Trabajo con Angular, C#, .NET, SQL Server, TypeScript y React, desarrollando microservicios y microfrontends en entornos multirepo. Gestiono flujos de trabajo con Git, uso Docker para entornos de desarrollo y despliegue, aplico prácticas de ciberseguridad, integro interfaces basadas en diseños UI/UX y aseguro su responsividad. Además, realizo debugging, atención de tickets y propongo mejoras continuas para optimizar procesos y rendimiento del software.",
+        items: [
+            "Angular",
+            "TypeScript",
+            "C# Asp .net core 5>",
+            "React",
+            "Module Federation",
+            "Node js",
+            "SQL Serve",
+            "Microservices",
+            "MicroFrontends",
+            "Docker",
+            "Git",
+            "DDD, Clean architect",
+            "jira"
+            
+        ]
+    },
+    {
+        ariallabelDate: "2024 to Present",
+        Sdate: "Abril 2023 — Agosto 2024",
+        Shref: "https://xam.aldafa.com.mx:3000/",
+        ariallabelref: "Software Engineer, Accessibility at Aldafa (opens in a new tab)",
+        position: "Software Engineer ·",
+        companyname: "Aldafa",
+        descriptionjob: "Construyo y mantengo módulos y soluciones personalizadas, desplegando de forma segura con React y Vue para mejorar la experiencia del usuario. Aseguro el uso de las mejores prácticas de calidad de software, gestionando incidentes críticos con ServiceNow y manteniendo la continuidad del servicio. Mis habilidades incluyen gestión de bases de datos, desarrollo web full stack y refactorización de código, siempre enfocado en la mantenibilidad y escalabilidad siguiendo los principios SOLID.",
+        items: [
+            "JavaScript",
+            "TypeScript",
+            "C# Asp .net core",
+            "React",
+            "Vue.js",
+            "Node js",
+            "SQL Server",
+            "Python",
+            "Docker",
+            "Git",
+            "Jest",
+            "Selenium"
+            
+        ]
+    },
+    {
+        ariallabelDate: "January 2022 to December 2022",
+        Sdate: "Ene 2022 — Dic 2022",
+        Shref: "",
+        ariallabelref: "DevOps Engineer, Accessibility at DevOps UTLD (opens in a new tab)",
+        position: "DevOps Engineer ·",
+        companyname: "UTLD",
+        descriptionjob: "Gestioné servicios utilizando AWS EC2 y adquirí conocimientos en desarrollo DevOps, implementando prácticas CI/CD con Jenkins. Colaboré con las partes interesadas para identificar y documentar los requisitos, garantizando la mantenibilidad y escalabilidad del código siguiendo los principios SOLID. Las habilidades técnicas incluyen Ubuntu 18.04, Linux, PHP, Node.js, y CodeIgniter. Construí y mantuve módulos y soluciones personalizadas, desplegando de forma segura para mejorar la experiencia del usuario contribuyendo a lo largo del ciclo de vida del desarrollo. Aseguré el uso de las mejores prácticas de calidad de software, gestionando incidentes críticos con ServiceNow para mantener la continuidad del servicio.",
+        items: [
+            "JavaScript",
+            "PHP",
+            "HTML & CSS",
+            "Codeigniter",
+            "AWS EC2",
+            "Ubunto 18.4/22",
+            "SQL Server",
+            "Jenkins",
+            "Git",
+            "GitHub"
+        ]
+    },
+    {
+        ariallabelDate: "May 2019 to December 2019",
+        Sdate: "May 2019 — Dic 2019",
+        Shref: "https://www.imticglobalgroup.com/",
+        ariallabelref: "Associate Intern at IMTIC (opens in a new tab)",
+        position: "Associate Intern ·",
+        companyname: "IMTIC",
+        descriptionjob: "Participé en procesos de desarrollo, gestionando flujos de trabajo y adoptando tecnologías de vanguardia. Implementé metodologías ágiles para optimizar proyectos y mejorar la eficiencia. Demostré competencia en diversos lenguajes de programación y utilicé plataformas low-code para acelerar la entrega. Me enfoqué en mantener las mejores prácticas y mejorar la colaboración del equipo durante todo el ciclo de vida del desarrollo.",
+        items: [
+            "Bizagi",
+            "Javascript",
+            "Scrum",
+            "Algorithms",
+            "SQL Server",
+            "Git",
+            "Appian",
+            "Low-code"
+        ]
+    }
+]
+</file>
+
+<file path="src/models/projectsInterface.ts">
+export interface projectsInterfaces {
+    href: string,
+    name: string,
+    label: string,
+    desc: string
+    srcsett: string,
+    mainimg: string
+}
+
+export interface allprojects {
+    Title: string;
+    date:string;
+    Img: string;
+    ImgDesc: string;
+    Uri: string;
+    Github: string;
+    GeneralDescription: string;
+    Button: string;
+    index: string[];
+}
+// 
+export interface ProjectInfo {
+    P: string;
+    ref: string;
+    img: string;
+    p2: string;
+    ref2: string;
+    images: string[];
+}
+
+export interface Project {
+    Title: string;
+    date: string;
+    Img: string;
+    ImgDesc: string;
+    Uri: string;
+    Github: string;
+    GeneralDescription: string;
+    Button: string;
+    index: string[];
+    info: ProjectInfo;
+}
+</file>
+
+<file path="src/index.css">
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Personalización del scroll para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0f172a;
+  /* Color de la pista del scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0f172a;
+  /* Color del pulgar del scrollbar */
+  border-radius: 6px;
+  /* Bordes redondeados para el pulgar */
+}
+
+/* Personalización del scroll para Firefox */
+* {
+  scrollbar-width: thin;
+  /* Hacer el scrollbar más delgado */
+  scrollbar-color: #6a7691 #0f172a;
+  /* Color del pulgar y el track del scrollbar */
+}
+
+
+/* projects css and medria queries*/
+@media (max-width: 842px) {
+
+  /* Aquí van tus estilos específicos */
+  .responsivephone {
+    /* Ejemplo de estilo */
+    margin-top: 65px;
+  }
+
+  .noneed {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .floatbutton {
+    position: absolute !important;
+    top: 3.5vh !important;
+    left: 130px;
+    /* width: 100% !important; */
+  }
+  .noneed {
+    display: none;
+  }
+}
+@media (max-width: 735px) {
+  .floatbutton {
+    position: absolute !important;
+    top: 3.5vh !important;
+    left: 120px;
+  }
+  .noneed {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .floatbutton {
+    position: absolute !important;
+    top: 3.5vh !important;
+    left: 115px;
+  }
+  .noneed {
+    display: none;
+  }
+}
+@media (max-width: 502px) {
+  .floatbutton {
+    position: absolute !important;
+    top: 3.5vh !important;
+    left: 90px;
+  }
+  .noneed {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+ .phonev{
+  position: absolute !important;
+  /* top: 3.5vh !important; */
+  left: 20px !important;
+ }
+}
+</file>
+
+<file path="src/data/allprojects.ts">
+export const experienceDataDetail = [
+    {
+        Title: "Expres and angular movies app",
+        date:"09/2024",
+        Img: "/principalimg/moviesapp.webp",
+        ImgDesc: "Expressapp",
+        Uri: "",
+        Github: "https://github.com/BryanRuizz/MoviesAngular",
+        GeneralDescription: "",
+        Button: "Read post",
+        // index is for links o refs
+        index: [
+            "Description",
+            "frontend",
+        ],
+        info: {
+            P: "In this project, an information management system is implemented using Express.js and Node.js v20 LTS, coupled with a MongoDB database. The backend follows a layered architecture, which allows an organized and scalable flow for information management. In addition, Swagger has been integrated to document the endpoints, facilitating the interaction with movies and users collections. Although this system is only a test or MVP (Minimum Viable Product), it works as a basic model for managing movie and user data.",
+            ref: "Description",
+            img: "/exjsmovies/c1.webp",
+            p2: "On the frontend side, Angular plays a central role in managing users, allowing to verify their existence in the database. However, as it is a test project, no security features such as JWT or password hashing have been added. Even so, a clean architecture has been maintained, using the Singleton design pattern for the API service. With TypeScript as the main language, CRUD operations and basic alphabetical filters are implemented, although pagination or RxJS are not included, since the simplicity of the project does not require it.",
+            ref2: "frontend",
+            images: [
+                "/exjsmovies/c2.webp",
+                "/exjsmovies/c3.webp",
+                "/exjsmovies/c4.webp",
+                "/exjsmovies/c5.webp",
+                "/exjsmovies/c6.webp",
+                "/exjsmovies/c7.webp",
+                "/exjsmovies/c8.webp",
+                "/exjsmovies/c9.webp",
+                "/exjsmovies/c10.webp"
+            ],
+        },
+    },
+    {
+        Title: "Simple angular webapp test1",
+        date:"08/2024",
+        Img: "/principalimg/tvshows.webp",
+        ImgDesc: "Angular app",
+        Uri: "",
+        Github: "https://github.com/BryanRuizz/MovieCinemaapp",
+        GeneralDescription: "",
+        Button: "Read post",
+        // index is for links o refs
+        index: [
+            "Api Description",
+            "TvShows",
+        ],
+        info: {
+            P: "This implementation consists of an API developed in C# using a simple MVC architecture, along with Entity Framework as ORM and Swagger for documentation. The API uses in-memory lists as a database, which allows adding, deleting and updating data without persistence, being a learning exercise for its integration with a frontend in Angular.",
+            ref: "Api Description",
+            img: "/csyangular/c1.webp",
+            p2: "On the frontend side, Angular 18 is used with components, hooks, RxJS and TypeScript. The REST API consumption is handled through a service with a Singleton design pattern, within a clean architecture. The application implements basic CRUD operations and is designed with HTML5 and CSS, working as a solution to manage files and control information about TV shows.",
+            ref2: "TvShows",
+            images: [
+                "/csyangular/c2.webp",
+                "/csyangular/c3.webp",
+                "/csyangular/c4.webp",
+                "/csyangular/c5.webp",
+                "/csyangular/c6.webp",
+                "/csyangular/c7.webp"
+            ],
+        },
+    },
+    {
+        Title: "Package delivery",
+        date:"08/2024",
+        Img: "/principalimg/algoritmia.webp",
+        ImgDesc: "Testing",
+        Uri: "https://testone-ecru.vercel.app/",
+        Github: "https://github.com/BryanRuizz/testone",
+        GeneralDescription: "Logic test, development of comprehension and understanding only testing",
+        Button: "",
+        index: [
+            "",
+            "",
+        ]
+    }
+    ,
+    {
+
+        Title: "Crossfit Wod API",
+        date:"07/2024",
+        Img: "/principalimg/crossfit api.webp",
+        ImgDesc: "CrossApi",
+        Uri: "https://apirest2.vercel.app/api/v1/docs/",
+        Github: "https://github.com/BryanRuizz/apirest",
+        GeneralDescription: "CrossApi rest, end point to get whole information about crossfit, crud.(just for testing)",
+        Button: "",
+        index: [
+            "",
+            "",
+        ]
+    },
+
+    {
+        Title: "Chat realtime",
+        date:"06/2024",
+        Img: "/principalimg/chat.webp",
+        ImgDesc: "Realtime pusher-js",
+        Uri: "",
+        Github: "https://github.com/BryanRuizz/Node_testing/tree/main/pusher_v1",
+        GeneralDescription: "",
+        Button: "Read post",
+        // index is for links o refs
+        index: [
+            "Description",
+            "Express",
+        ],
+        info: {
+            P: "This is a web implementation of a real-time chat application using React for the frontend. In the application, users subscribe to a channel using Pusher, which allows them to listen and receive message events in real time. Messages sent by one user are instantly broadcast to everyone connected to that same channel.",
+            ref: "Description",
+            img: "/chat/c3.webp",
+            p2: "The backend, developed with Express, handles the creation of events and the connection to the Pusher channel. This allows any message sent by a user to be captured and transmitted to all subscribers of the channel, achieving a fluid and real-time communication.",
+            ref2: "Express",
+            images: [
+                "/chat/c5.webp",
+                "/chat/c1.webp",
+                "/chat/c4.webp",
+                "/chat/c2.webp"
+            ],
+        },
+    }
+    , {
+        Title: "Csharp projects",
+        date:"2019-2022",
+        Img: "/principalimg/csharp.webp",
+        ImgDesc: "siu",
+        Uri: "",
+        Github: "https://github.com/BryanRuizz/Csharp_Trabajos/tree/main",
+        GeneralDescription: "",
+        Button: "Read post",
+        // index is for links o refs
+        index: [
+            "University",
+            "Windos-form",
+        ],
+        info: {
+            P: "During my university studies, I had the opportunity to immerse myself in the world of programming using C#. This programming language, which is known for its robustness and versatility, was my first serious approach to developing logic solutions. I started working in console environments, where I learned the basics of programming logic, such as creating loops, conditional structures and handling data through variables and data types. The terminal was an excellent starting point, as it allowed me to focus on how to solve problems without being distracted by visual elements.",
+            ref: "University",
+            img: "/csharp/c1.webp",
+            p2: "Later, I explored the development of graphical interfaces using Windows Forms, which allowed me to visualize the solutions I had implemented on the terminal. With Forms, I not only reinforced key concepts such as event management, but also learned how to create interactive user interfaces. This was an important step in my training, as it allowed me to understand how logical solutions implemented in code can be translated into functional applications that users can easily interact with. Learning C# in combination with the terminal and Forms not only gave me a solid foundation in programming logic, but also taught me how to structure complete applications. This process not only strengthened my technical skills, but also made me understand the value of planning and design in software development.",
+            ref2: "Windos-form",
+            images: [
+                "/csharp/c2.webp",
+                "/csharp/c3.webp",
+                "/csharp/c4.webp",
+                "/csharp/c5.webp",
+                "/csharp/c6.webp"
+            ],
+        },
+    },
+
+]
+
+export const experienceDataDetailesp = [
+    {
+        Title: "Expres and angular movies app",
+        date:"09/2024",
+        Img: "/principalimg/moviesapp.webp",
+        ImgDesc: "Expressapp",
+        Uri: "",
+        Github: "https://github.com/BryanRuizz/MoviesAngular",
+        GeneralDescription: "",
+        Button: "Leer post",
+        // index is for links o refs
+        index: [
+            "Descripción",
+            "frontend",
+        ],
+        info: {
+            P: "En este proyecto se implementa un sistema de gestión de la información utilizando Express.js y Node.js v20 LTS, acoplado a una base de datos MongoDB. El backend sigue una arquitectura en capas, que permite un flujo organizado y escalable para la gestión de la información. Además, se ha integrado Swagger para documentar los endpoints, facilitando la interacción con películas y colecciones de usuarios. Aunque este sistema es sólo una prueba o MVP (Minimum Viable Product), funciona como un modelo básico para la gestión de datos de películas y usuarios.",
+            ref: "Descripción",
+            img: "/exjsmovies/c1.webp",
+            p2: "En el lado del frontend, Angular juega un papel central en la gestión de usuarios, permitiendo verificar su existencia en la base de datos. Sin embargo, al tratarse de un proyecto de pruebas, no se han añadido funcionalidades de seguridad como JWT o hash de contraseñas. Aún así, se ha mantenido una arquitectura limpia, utilizando el patrón de diseño Singleton para el servicio API. Con TypeScript como lenguaje principal, se implementan operaciones CRUD y filtros alfabéticos básicos, aunque no se incluye paginación ni RxJS, ya que la sencillez del proyecto no lo requiere.",
+            ref2: "frontend",
+            images: [
+                "/exjsmovies/c2.webp",
+                "/exjsmovies/c3.webp",
+                "/exjsmovies/c4.webp",
+                "/exjsmovies/c5.webp",
+                "/exjsmovies/c6.webp",
+                "/exjsmovies/c7.webp",
+                "/exjsmovies/c8.webp",
+                "/exjsmovies/c9.webp",
+                "/exjsmovies/c10.webp"
+            ],
+        },
+    },
+    {
+        Title: "Simple angular webapp test1",
+        date:"08/2024",
+        Img: "/principalimg/tvshows.webp",
+        ImgDesc: "Angular app",
+        Uri: "",
+        Github: "https://github.com/BryanRuizz/MovieCinemaapp",
+        GeneralDescription: "",
+        Button: "Leer post",
+        // index is for links o refs
+        index: [
+            "Api Descripción",
+            "TvShows",
+        ],
+        info: {
+            P: "Esta implementación consiste en una API desarrollada en C# utilizando una arquitectura MVC sencilla, junto con Entity Framework como ORM y Swagger para la documentación. La API utiliza listas en memoria como base de datos, lo que permite añadir, borrar y actualizar datos sin persistencia, siendo un ejercicio de aprendizaje para su integración con un frontend en Angular.",
+            ref: "Api Descripción",
+            img: "/csyangular/c1.webp",
+            p2: "En el frontend se utiliza Angular 18 con componentes, hooks, RxJS y TypeScript. El consumo de la API REST se gestiona a través de un servicio con un patrón de diseño Singleton, dentro de una arquitectura limpia. La aplicación implementa operaciones CRUD básicas y está diseñada con HTML5 y CSS, funcionando como una solución para gestionar archivos y controlar información sobre programas de televisión.",
+            ref2: "TvShows",
+            images: [
+                "/csyangular/c2.webp",
+                "/csyangular/c3.webp",
+                "/csyangular/c4.webp",
+                "/csyangular/c5.webp",
+                "/csyangular/c6.webp",
+                "/csyangular/c7.webp"
+            ],
+        },
+    },
+    {
+        Title: "Package delivery",
+        date:"08/2024",
+        Img: "/principalimg/algoritmia.webp",
+        ImgDesc: "Testing",
+        Uri: "https://testone-ecru.vercel.app/",
+        Github: "https://github.com/BryanRuizz/testone",
+        GeneralDescription: "Prueba de lógica, desarrollo de la comprensión y entendimiento, sólo pruebas",
+        Button: "",
+        index: [
+            "",
+            "",
+        ]
+    }
+    ,
+    {
+
+        Title: "Crossfit Wod API",
+        date:"07/2024",
+        Img: "/principalimg/crossfit api.webp",
+        ImgDesc: "CrossApi",
+        Uri: "https://apirest2.vercel.app/api/v1/docs/",
+        Github: "https://github.com/BryanRuizz/apirest",
+        GeneralDescription: "CrossApi resto, punto final para obtener toda la información acerca de crossfit, crud.(sólo para pruebas)",
+        Button: "",
+        index: [
+            "",
+            "",
+        ]
+    },
+
+    {
+        Title: "Chat realtime",
+        date:"06/2024",
+        Img: "/principalimg/chat.webp",
+        ImgDesc: "Realtime pusher-js",
+        Uri: "",
+        Github: "https://github.com/BryanRuizz/Node_testing/tree/main/pusher_v1",
+        GeneralDescription: "",
+        Button: "Leer post",
+        // index is for links o refs
+        index: [
+            "Descripción",
+            "Express",
+        ],
+        info: {
+            P: "Esta es una implementación web de una aplicación de chat en tiempo real utilizando React para el frontend. En la aplicación, los usuarios se suscriben a un canal utilizando Pusher, lo que les permite escuchar y recibir eventos de mensajes en tiempo real. Los mensajes enviados por un usuario se difunden instantáneamente a todos los conectados a ese mismo canal.",
+            ref: "Descripción",
+            img: "/chat/c3.webp",
+            p2: "El backend, desarrollado con Express, gestiona la creación de eventos y la conexión con el canal Pusher. Esto permite que cualquier mensaje enviado por un usuario sea capturado y transmitido a todos los suscriptores del canal, consiguiendo una comunicación fluida y en tiempo real.",
+            ref2: "Express",
+            images: [
+                "/chat/c5.webp",
+                "/chat/c1.webp",
+                "/chat/c4.webp",
+                "/chat/c2.webp"
+            ],
+        },
+    }
+    , {
+        Title: "Csharp projects",
+        date:"2019-2022",
+        Img: "/principalimg/csharp.webp",
+        ImgDesc: "siu",
+        Uri: "",
+        Github: "https://github.com/BryanRuizz/Csharp_Trabajos/tree/main",
+        GeneralDescription: "",
+        Button: "Leer post",
+        // index is for links o refs
+        index: [
+            "Universidad",
+            "Windos-form",
+        ],
+        info: {
+            P: "Durante mis estudios universitarios, tuve la oportunidad de sumergirme en el mundo de la programación utilizando C#. Este lenguaje de programación, conocido por su robustez y versatilidad, fue mi primer acercamiento serio al desarrollo de soluciones lógicas. Empecé trabajando en entornos de consola, donde aprendí los fundamentos de la lógica de programación, como la creación de bucles, las estructuras condicionales y el manejo de datos mediante variables y tipos de datos. El terminal fue un excelente punto de partida, ya que me permitía centrarme en cómo resolver problemas sin distraerme con elementos visuales.",
+            ref: "Universidad",
+            img: "/csharp/c1.webp",
+            p2: "Más tarde, exploré el desarrollo de interfaces gráficas utilizando Windows Forms, que me permitía visualizar las soluciones que había implementado en el terminal. Con Forms, no sólo reforcé conceptos clave como la gestión de eventos, sino que también aprendí a crear interfaces de usuario interactivas. Este fue un paso importante en mi formación, ya que me permitió comprender cómo las soluciones lógicas implementadas en código pueden traducirse en aplicaciones funcionales con las que los usuarios pueden interactuar fácilmente. El aprendizaje de C# en combinación con el terminal y los formularios no sólo me proporcionó una base sólida en lógica de programación, sino que también me enseñó a estructurar aplicaciones completas. Este proceso no sólo reforzó mis conocimientos técnicos, sino que también me hizo comprender el valor de la planificación y el diseño en el desarrollo de software.",
+            ref2: "Windos-form",
+            images: [
+                "/csharp/c2.webp",
+                "/csharp/c3.webp",
+                "/csharp/c4.webp",
+                "/csharp/c5.webp",
+                "/csharp/c6.webp"
+            ],
+        },
+    },
+
+]
+</file>
+
+<file path="index.html">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/ico+xml" href="/Br_logo-ico.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Portfolio of Bryan Ruiz, a dedicated Software Engineer skilled in React, Redux, C#, Vue, SQL Server, and Angular. Explore my projects and experience in full-stack development.">
+  <meta name="author" content="Bryan Ruiz">
+  <meta name="keywords"
+    content="Bryan Ruiz, Portfolio, Software Engineer, React, Redux, C#, Vue, SQL Server, Angular, Full-Stack Development">
+    <meta name="google-site-verification" content="eHcRGuCsN2lXHURw_B6BNbyDTUl5yHtq2BFWYe09shM" />
+
+  <!-- This is the cdn of tailwind take this out on production -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Bryan Ruiz</title>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
+</file>
+
+<file path="src/pages/Map.tsx">
+import { useEffect, useRef, useState } from 'react';
+import 'leaflet/dist/leaflet.css';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { LatLngExpression } from 'leaflet';
+import { IoIosArrowBack } from 'react-icons/io';
+import { useNavigate } from 'react-router-dom';
+import L from 'leaflet';
+import { getcity, updatecity } from '../services/MapServices';
+import { Notyf } from 'notyf';
+
+const defaultIcon = L.icon({
+    iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
+    shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+L.Marker.prototype.options.icon = defaultIcon;
+
+interface SetViewOnClickProps {
+    location: LatLngExpression | null; // Aquí definimos el tipo
+}
+
+const SetViewOnClick = ({ location }: SetViewOnClickProps) => {
+    const map = useMap();
+    useEffect(() => {
+        if (location) {
+            map.setView(location, map.getZoom());
+        }
+    }, [location, map]);
+
+    return null;
+};
+
+const Map = () => {
+    const [location, setLocation] = useState<LatLngExpression | null>([25.5427769, -103.4068786]);
+    const [city, setCity] = useState("Searching ");
+    const isFetched = useRef(false);
+    let navigate = useNavigate();
+    const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
+    const [localLanguage, setLocalLanguage] = useState("ENG");
+
+
+    useEffect(() => {
+        getcities();
+        const storedData: any = localStorage.getItem('language');
+        // console.log("proyectbyone", storedData);
+        if (JSON.parse(storedData) === "ESP") {
+            setLocalLanguage("ESP");
+        } else {
+            setLocalLanguage("ENG");
+        }
+    }, []);
+
+    const fetchLocation = async () => {
+        if (isFetched.current) {
+            return;
+        }
+
+        try {
+            const response = await fetch(`https://ipinfo.io/json?token=4148c242669b05`);
+            const data = await response.json();
+            let thiscity = data.city + " " + data.region + "," + data.country;
+            let cord = data.loc;
+            let info = {
+                cityName: thiscity,
+                cityLocation: cord
+            }
+            const apires = await updatecity(info);
+            console.log("apirest", apires);
+            isFetched.current = true;
+        } catch (error) {
+            console.error("Error obteniendo ubicación por IP: ", error);
+        }
+    };
+
+    const getcities = async () => {
+        try {
+            const res: any = await getcity();
+            if (res) {
+                let ress = res.data;
+
+                const parts = ress.split(/,(.+)/);
+                const location = parts[0].trim() + ',' + parts[1].trim().split(',')[0];
+                const coordinates = parts[1].trim().split(',').slice(1).join(',');
+
+                setCity(location);
+                const coordsArray = coordinates.split(',').map(Number);
+                setLocation(coordsArray);
+                fetchLocation();
+            }
+        } catch (error) {
+            notyf.error({
+                message: 'Not was possible get last city',
+                duration: 1000,
+            });
+            console.error("f", error);
+        }
+    }
+
+    return (
+        <div className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900 min-h-screen w-full flex flex-col justify-start items-center">
+            <div className='mt-16 w-11/12 sm:w-10/12 lg:w-9/12 mb-12 z-10'>
+                <button
+                    onClick={() => navigate("/")}
+                    className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49]"
+                >
+                    <span className="flex items-center text-white">
+                        <IoIosArrowBack className="mr-1" /> {localLanguage === "ENG" ? "Back" : "Atras"}
+                    </span>
+                </button>
+            </div>
+
+            {location ? (
+                <MapContainer
+                    center={location}
+                    zoom={12}
+                    style={{ height: '500px', width: '80%' }} // Ajusta el tamaño aquí
+                >
+                    <TileLayer
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    />
+                    <SetViewOnClick location={location} />
+                    <Marker position={location}>
+                        <Popup>
+                        {localLanguage === "ENG" ? "This is your most approximate location" : " Esta es tu ubicación aproximada."}
+                           
+                        </Popup>
+                    </Marker>
+                </MapContainer>
+
+            ) : (
+                <p>{localLanguage === "ENG" ? "Getting location..." : "Obteniendo ubicación..."}</p>
+            )}
+
+            <div className=" bottom-8 left-12 mt-12 ">
+                {/* <h2 className='mt-2 text-lg font-medium text-white sm:text-xl'>In testing</h2> */}
+                <h2 className="mt-3 text-lg font-medium text-white sm:text-xl">{localLanguage === "ENG" ? "Last visited:" : "Última visita:"} {`${city}`}</h2>
+            </div>
+        </div>
+    );
+}
+
+export default Map;
+</file>
+
+<file path="package.json">
+{
+  "name": "v2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.6",
+    "axios": "^1.7.7",
+    "leaflet": "^1.9.4",
+    "notyf": "^3.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-leaflet": "^4.2.1",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.25.1"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20.14.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.60.0",
+    "@typescript-eslint/parser": "^8.60.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^10.4.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4"
+  }
+}
+</file>
+
+<file path="src/common/ProjectsSection.tsx">
+import { useEffect, useState } from 'react'
+import { dataprojects, dataprojectsEsp } from '../data/projects';
+import { projectsInterfaces } from '../models/projectsInterface';
+import { useNavigate } from 'react-router-dom';
+
+interface propstypes {
+    language: string;
+  }
+
+  
+const ProjectsSection = ({ language }: propstypes) => {
+    // const navigate = useNavigate();
+    const [data,setData] = useState<projectsInterfaces[]>(dataprojects);
+
+    
+  useEffect(() => {
+    const storedData: any = localStorage.getItem('language');
+    // console.log("language desde about", storedData,language);
+
+    if (JSON.parse(storedData) === "ENG" || language === "ENG") {
+      // console.log("entro en ingles");
+
+      setData(dataprojects);
+    }
+    if (JSON.parse(storedData) === "ESP" || language === "ESP") {
+      // console.log("entro en español");
+      setData(dataprojectsEsp);
+    }
+
+  }, [language])
+  
+
+    let navigate = useNavigate();
+    const route = () => {
+        navigate("/Projects");
+    }
+    return (
+        <>
+            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Projects</h2>
+            </div>
+
+            {data.map((info, index) => (
+                <div key={index}>
+                    <ul className="group/list">
+                        <li className="mb-12">
+                            <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                                <div className="z-10 sm:order-2 sm:col-span-6">
+                                    <h3>
+                                        {info.href === "" ?
+                                            <span className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" rel="noreferrer noopener" aria-label={info.label} onClick={route}>
+                                                <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" >
+                                                </span><span>{info.name}<span className="inline-block">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                                                        {
+                                                            info.href === "" ? "" :
+                                                                <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
+                                                        }
+                                                    </svg>
+                                                </span>
+                                                </span>
+                                            </span>
+                                            :
+                                            <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href={info.href} target="_blank" rel="noreferrer noopener" aria-label={info.label}>
+                                                <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block">
+                                                </span><span>{info.name}<span className="inline-block">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                                                        {
+                                                            info.href === "" ? "" :
+                                                                <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
+                                                        }
+                                                    </svg>
+                                                </span>
+                                                </span>
+                                            </a>
+                                        }
+
+
+                                    </h3>
+                                    <p className="mt-2 text-sm leading-normal">{info.desc}</p>
+                                </div>
+
+                                <img alt="Bu just info" loading="lazy" width="200" height="58" decoding="async" data-nimg="1" className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" style={{ color: "transparent" }}
+                                    srcSet={info.srcsett}
+                                    src={info.mainimg}
+                                    
+                                ></img>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            ))
+
+            }
+
+
+            <div className="mt-12" onClick={route}>
+                <span className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Project Archive" ><span>
+                    <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">{language ==="ENG"?"View Full Project":"Ver archivos completos del"} </span>
+                    <span className="whitespace-nowrap">
+                        <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">{language ==="ENG"?"Archive":"proyecto"}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" aria-hidden="true">
+                            <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd"></path>
+                        </svg>
+                    </span>
+                </span>
+                </span>
+            </div>
+        </>
+    )
+}
+
+export default ProjectsSection
+</file>
+
+<file path="src/common/Experience.tsx">
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ExperienceInterface } from "../models/experienceInterface";
+import { experienceData, experienceDataEsp } from "../data/experienceData";
+
+interface propstypes {
+  language: string;
+}
+
+const Experience = ({ language }: propstypes) => {
+
+  let navigate = useNavigate();
+  const [dataex, setDataEx] = useState<ExperienceInterface[]>(experienceData);
+
+  useEffect(() => {
+    const storedData: any = localStorage.getItem('language');
+    // console.log("language desde about", storedData,language);
+
+    if (JSON.parse(storedData) === "ENG" || language === "ENG") {
+      // console.log("entro en ingles");
+
+      setDataEx(experienceData);
+    }
+    if (JSON.parse(storedData) === "ESP" || language === "ESP") {
+      // console.log("entro en español");
+      setDataEx(experienceDataEsp);
+    }
+
+  }, [language])
+
+  const route = () => {
+    navigate("/Projects");
+  }
+  return (
+    <>
+      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+        <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
+      </div>
+      <div>
+
+        <ol className="group/list">
+          {dataex.map((info, index) => (
+            <li className="mb-12" key={index}>
+              <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label={info.ariallabelDate}>{info.Sdate}</header>
+                <span className="z-10 sm:col-span-6" onClick={info.Shref === "" ? route : () => { }}>
+                  <h3 className="font-medium leading-snug text-slate-200">
+                    <div>
+                      {info.Shref === "" ?
+                        <span className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" rel="noreferrer noopener" aria-label={info.ariallabelref}>
+                          <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                          <span>{info.position}{" "}
+                            <span className="inline-block"> {info.companyname}
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                                <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
+                              </svg>
+                            </span>
+                          </span>
+                        </span>
+                        :
+                        <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base" href={info.Shref} target="_blank" rel="noreferrer noopener" aria-label={info.ariallabelref}>
+                          <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                          <span>{info.position}{" "}
+                            <span className="inline-block"> {info.companyname}
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                                <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
+                              </svg>
+                            </span>
+                          </span>
+                        </a>
+                      }
+                    </div>
+                  </h3>
+                  <p className="mt-2 text-sm leading-normal">{info.descriptionjob}</p>
+                  {/* id="this" */}
+                  <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+                    {info.items.map((item, index) => (
+                      <li className="mr-1.5 mt-2" key={index}>
+                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">{item}</div>
+                      </li>
+                    ))
+                    }
+                  </ul>
+                </span>
+              </div>
+            </li>
+          ))}
+
+        </ol>
+
+        {language === "ENG" ? (
+          <div className="mt-12" >
+            <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" href="/Software_engineer_Bryan_ruiz_cv_eng.pdf" target="_blank" rel="noreferrer noopener" aria-label="View  Résumé (opens in a new tab)">
+              <span>View
+                <span className="inline-block">Résumé
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                    <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
+                  </svg>
+                </span>
+              </span>
+            </a>
+          </div>
+        ) : (
+
+          <div className="mt-12" >
+            <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" href="/Software_engineer_Bryan_ruiz_cv_esp.pdf" target="_blank" rel="noreferrer noopener" aria-label="View  Résumé (opens in a new tab)">
+              <span>Ver
+                <span className="inline-block">Resumen
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                    <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
+                  </svg>
+                </span>
+              </span>
+            </a>
+          </div>)}
+
+      </div>
+    </>
+  )
+}
+
+export default Experience
+</file>
+
+<file path="src/data/projects.ts">
+export const dataprojects = [
+
+    {
+        href: "https://siticsoftware.com/",
+        name: "Data Management System",
+        label: "Erp system",
+        desc: "Custom software development, IT consulting, Technical support, modular.",
+        srcsett: "/principalimg/sitic.webp 1x, /principalimg/sitic.webp 2x",
+        mainimg: "/principalimg/sitic.webp",
+
+    },
+    {
+        href: "https://xam.aldafa.com.mx:3000/",
+        name: "Information Manager erp",
+        label: "Erp system",
+        desc: "Enterprise resource management system, non-commercial, modular, comprehensive and customised.",
+        srcsett: "/principalimg/aldafaerp.webp 1x, /principalimg/aldafaerp.webp 2x",
+        mainimg: "/principalimg/aldafaerp.webp",
+
+    },
+    {
+        href: "https://www.aldafa.com.mx/#/principal",
+        name: "Aldafa web page",
+        label: "Erp system",
+        desc: "Main presentation web page to publicise the personal or business brand and attract sales.",
+        srcsett: "/principalimg/aldafamain.webp 1x, /principalimg/aldafamain.webp 2x",
+        mainimg: "/principalimg/aldafamain.webp",
+    },
+    {
+        href: "https://play.google.com/store/apps/details?id=aldafa.FinancialBox",
+        name: "FinancialBox",
+        label: "Loans and savings for business",
+        desc: "A user-friendly mobile application designed to manage both savings and business loans, tailored for the general public, with an intuitive interface",
+        srcsett: "/principalimg/savvy.webp 1x, /principalimg/savvy.webp 2x",
+        mainimg: "/principalimg/savvy.webp",
+    },
+]
+
+export const dataprojectsEsp = [
+    
+    {
+        href: "https://siticsoftware.com/",
+        name: "Sistena administrador de datos",
+        label: "Erp system",
+        desc: "Consultoria de software hecho a la medida, soporte de tickets,erp modular comercial",
+        srcsett: "/principalimg/sitic.webp 1x, /principalimg/sitic.webp 2x",
+        mainimg: "/principalimg/sitic.webp",
+
+    },
+    {
+        href: "https://xam.aldafa.com.mx:3000/",
+        name: "Administracion de recursos ERP",
+        label: "Erp system",
+        desc: "Sistema de gestión de recursos empresariales, no comercial, modular, completo y personalizado.",
+        srcsett: "/principalimg/aldafaerp.webp 1x, /principalimg/aldafaerp.webp 2x",
+        mainimg: "/principalimg/aldafaerp.webp",
+
+    },
+    {
+        href: "https://www.aldafa.com.mx/#/principal",
+        name: "Aldafa web page",
+        label: "Pagina principal",
+        desc: "Página web de presentación principal para dar a conocer la marca personal o empresarial y atraer ventas.",
+        srcsett: "/principalimg/aldafamain.webp 1x, /principalimg/aldafamain.webp 2x",
+        mainimg: "/principalimg/aldafamain.webp",
+    },
+    {
+        href: "",
+        name: "Savvy bucks",
+        label: "Savvy aplicacion de prestamos",
+        desc: "Una aplicación móvil fácil de usar diseñada para gestionar tanto los ahorros como los préstamos a empresas, adaptada al público en general, con una interfaz intuitiva.",
+        srcsett: "/principalimg/savvy.webp 1x, /principalimg/savvy.webp 2x",
+        mainimg: "/principalimg/savvy.webp",
+    },
+]
+</file>
+
+<file path="src/App.tsx">
+// import { useState } from 'react'
+import { Route, Routes } from "react-router-dom"
+import Portafolio from "./pages/PortafolioBody"
+import Projects from "./pages/Projects"
+import Projectbyone from "./pages/Projectbyone"
+import Error404 from "./pages/Error404"
+import Map from "./pages/Map"
+
+
+function App() {
+
+  return (
+    <div className='App'>
+      <Routes>
+        <Route path={'/'} element={<Portafolio />} />
+        <Route path={'/Projects'} element={<Projects />} />
+        <Route path={'/ProjectByOne'} element={<Projectbyone />} />
+        <Route path={'/Map'} element={<Map />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+    </div >
+  )
+}
+
+export default App
+</file>
+
+<file path="src/pages/Projectbyone.tsx">
+import { useEffect, useState } from 'react';
+import { IoIosArrowBack } from 'react-icons/io';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { RootState } from '../app/store';
+import useMousePosition from '../hooks/useMousePosition';
+
+const Projectbyone = () => {
+    let navigate = useNavigate();
+    const position = useMousePosition(false);
+
+    const tempinfo = useSelector((state: RootState) => state.Portafolio.tempinfo);
+    const [data, setData] = useState<any>(tempinfo);//add interface
+    const [localLanguage, setLocalLanguage] = useState("ENG");
+
+    useEffect(() => {
+        if (!data || data.length <= 0) {
+            const storedData = localStorage.getItem('projectbyone');
+            // console.log("proyectbyone",storedData);
+            if (storedData) {
+                setData(JSON.parse(storedData));
+            }
+        }
+        const storedData: any = localStorage.getItem('language');
+        // console.log("proyectbyone", storedData);
+        if (JSON.parse(storedData) === "ESP") {
+            setLocalLanguage("ESP");
+        } else {
+            setLocalLanguage("ENG");
+        }
+    }, [data])
+
+    const goback = () => {
+        localStorage.removeItem('projectbyone');
+        navigate("/Projects")
+    }
+    // console.log(localLanguage);
+    return (
+        <div className="min-h-screen bg-slate-900 relative selection:bg-teal-300 selection:text-teal-900">
+            <div className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+                style={{ background: `radial-gradient(600px circle at ${position.x}px ${position.y}px,rgba(28, 211, 217, 0.1),transparent 40%)` }}>
+            </div>
+            {/* Header con el botón de regreso */}
+            <div className='flex felx-nowrap' style={{ position: "fixed", width: "100%", height: "10vh", top: 0 }}>
+
+                <div style={{ background: "", width: "100%", height: "100%", backdropFilter: "blur(10px)", WebkitBackdropFilter: "blur(10px)", zIndex: 1000 }}></div>
+            </div>
+            {/* Contenedor principal con columnas laterales y contenido central */}
+
+            <div style={{ display: "flex", width: "100%", height: "90vh" }}>
+
+
+
+                {/* Columna lateral fija */}
+                <div style={{ width: "20%", backgroundColor: "", position: "fixed", top: "10vh" }} className='floatbutton'>
+
+                    <div style={{ height: "auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "", marginBottom: "50px", zIndex: "1000" }}>
+                        <button
+                            onClick={() => goback()}
+                            className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49]"
+                        >
+                            <span className="flex items-center text-white leading-normal">
+                                <IoIosArrowBack className="mr-1" /> {localLanguage === "ENG" ? "Back" : "Atras"}
+                            </span>
+                        </button>
+                    </div>
+
+
+                    <ul className="flex flex-col items-center justify-center space-y-4 p-0 m-0 h-full noneed">
+                        {data.length !== 0 && data.index.map((item: any, key: any) => (
+                            <li key={key}>
+                                <a href={`#${item}`} className="text-slate-400 hover:text-slate-200 noneed">
+                                    {item}
+                                </a>
+                            </li>
+                        ))}
+
+                    </ul>
+
+                </div>
+
+
+
+
+                {/* Contenedor principal que ocupa el 80% del ancho total */}
+                < div style={{ width: "80%", marginLeft: "20%", display: "flex", height: "100%", background: "" }}>
+                    {/* Contenido central con scroll */}
+                    < div className="text-slate-400 px-4" style={{ flex: "1", height: "calc(110vh - 10vh)", overflowY: "auto", backgroundColor: "", display: "flex" }} >
+                        < div style={{ flex: "1", paddingRight: "15%", background: "" }}>
+                            < div style={{ width: "100%", height: "10vh" }}></div >
+
+                            {data && data.info ? (
+                                <>
+                                    <p id={`${data.info.ref}`} className="mb-4">
+                                        {data.info.P}
+                                    </p>
+
+                                    <div style={{ marginTop: "80px" }}>
+                                        <div className="relative group bg-white border border-gray-400 shadow-md rounded-lg overflow-hidden">
+                                            <img src={data.info.img} className="object-contain w-full h-auto" alt="aa" loading="lazy" />
+                                        </div>
+                                    </div>
+
+                                    <p id={`${data.info.ref2}`} className="mt-12">
+                                        {data.info.p2}
+                                    </p>
+
+                                    {
+                                        data.info.images.map((item: any, key: any) => (
+                                            <div key={`img-${key}`} style={{ width: "100%", marginTop: "80px" }}>
+                                                <div className="relative group bg-white border border-gray-400 shadow-md rounded-lg overflow-hidden">
+                                                    <img
+                                                        src={`${item}`}
+                                                        className="object-contain w-full h-auto"
+                                                        alt="aa"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+
+
+                                </>
+                            ) : (<></>)}
+
+                            <div style={{ height: "110px" }}></div>
+                            {/* diseño no mover */}
+                        </div >
+
+                        {/* Columna lateral derecha fija dentro del contenedor principal */}
+                        < div style={{ width: "10%", backgroundColor: "", height: "calc(90vh - 10vh)", position: "sticky", right: 0 }}></div >
+
+
+                    </div >
+                </div >
+            </div >
+
+        </div >
+    );
+}
+
+export default Projectbyone;
+</file>
+
+<file path="vercel.json">
+{ "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] }
+</file>
+
+<file path="src/pages/Projects.tsx">
+import { FaGithub, FaInternetExplorer } from "react-icons/fa";
+import { IoIosArrowBack } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
+import { experienceDataDetail, experienceDataDetailesp } from "../data/allprojects";
+import { setInf } from "../redux/PortafolioSlice";
+import { useDispatch } from "react-redux";
+import { allprojects } from "../models/projectsInterface";
+import useMousePosition from "../hooks/useMousePosition";
+import { useEffect, useState } from "react";
+
+// import '../App.css';
+
+const Projects = () => {
+  const position = useMousePosition(false);
+  let navigate = useNavigate();
+  const [data,setData] = useState<allprojects[]>(experienceDataDetail);
+  const dispatch = useDispatch();
+  const [localLanguage, setLocalLanguage] = useState("ENG");
+
+  const NaviToProjectbyOne = (label: string) => {
+    const info: any = data.find(item => item.Title === label);
+    if (!localStorage.getItem('projectbyone')) {
+      localStorage.setItem('projectbyone', JSON.stringify(info));
+    }
+    dispatch(setInf(info));
+    // console.log(info);
+    navigate("/ProjectByOne");
+  }
+
+  useEffect(() => {
+    const storedData: any = localStorage.getItem('language');
+    // console.log("language desde about", storedData,language);
+
+    if (JSON.parse(storedData) === "ENG" ) {
+      // console.log("entro en ingles");
+      setLocalLanguage("ENG");
+      setData(experienceDataDetail);
+    }
+    if (JSON.parse(storedData) === "ESP" ) {
+      // console.log("entro en español");
+      setLocalLanguage("ESP");
+      setData(experienceDataDetailesp);
+    }
+
+  }, [])
+
+
+
+  return (
+    <div className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+
+      <div
+        className="pointer-events-none fixed inset-0 z-30 transition duration-300"
+        style={{
+          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(28, 211, 217, 0.1), transparent 40%)`
+        }}
+      ></div>
+      <div style={{ backgroundColor: "", width: "100%", height: "10vh", bottom: 0 }}></div>
+
+      <div style={{ width: "20%", backgroundColor: "", position: "absolute", top: "10vh" }}>
+        <div style={{ height: "auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "", marginBottom: "50px" }}>
+          <button
+            onClick={() => navigate("/")}
+            className="bg-slate-900 flex items-center space-x-2 p-2 rounded border border-gray-400 transition-colors duration-300 hover:bg-[#082f49] phonev"
+          >
+            <span className="flex items-center text-white leading-normal">
+              <IoIosArrowBack className="mr-1" />{localLanguage === "ENG"?"Back":"Atras"}
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center h-full mb-12 responsivephone" style={{ background: "" }}>
+        <div className="4/5" style={{ background: "" }}>
+          <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">{localLanguage ==="ENG"?"Public and personal projects":"Proyectos públicos y personales"}</h1>
+          <h2 className=" mt-3 text-lg font-medium leading-normal text-slate-400 sm:text-xl">{localLanguage ==="ENG"?"Redirection to pages or github repositories":"Redirección a páginas o repositorios de github"}</h2>
+        </div>
+      </div>
+
+      <div className="min-h-screen bg-slate-900 relative">
+
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-12 p-4">
+
+          {data.map((item, index) => (
+
+            < div key={`${"projectId" + index}`} className="relative group bg-white border border-gray-400 shadow-md rounded-lg overflow-hidden flex flex-col transform transition-transform duration-300 hover:translate-y-[-10px] hover:border-[#7F9B8F]" >
+              <img src={`${item.Img}`} className="object-cover w-full h-64 flex-grow-0" alt={`${item.ImgDesc}`} loading="lazy" />
+              < div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300" >
+                <div className="bg-slate-900 text-slate-400 p-1 rounded-lg absolute top-2 left-2" style={{ zIndex: "1000" }}>
+                  <p className="mb-1">{item.date}</p>
+                </div>
+                < div className="flex-grow flex items-center justify-center space-x-16 p-4" >
+                 
+                  {
+                    item.Uri !== "" && (
+                      <a href={item.Uri} target="_blank" rel="noopener noreferrer">
+                        <FaInternetExplorer className="text-white text-3xl hover:text-gray-400 transition-colors duration-300" />
+                      </a>
+                    )
+                  }
+                  {item.Github !== "" && (
+                    <a href={item.Github} target="_blank" rel="noopener noreferrer">
+                      <FaGithub className="text-white text-3xl hover:text-gray-400 transition-colors duration-300" />
+                    </a>
+                  )}
+                </div>
+                {item.GeneralDescription !== "" ? (
+                  <div className="bg-slate-900 p-2 flex-shrink-0 h-1/3 text-slate-400 px-4 rounded-lg ">
+                    <div className="h-full overflow-auto mb-4">
+                      <p className="mb-4">
+                        {item.GeneralDescription}
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="bg-slate-900 text-white text-center p-2 flex-shrink-0 h-1/3 rounded-lg ">
+                    <button
+                      onClick={() => NaviToProjectbyOne(item.Title)}
+                      className="px-3 py-2 bg-slate-900 text-slate-400 border border-gray-400 w-[98%] h-full mx-auto rounded-lg transition-colors duration-300 hover:bg-[#082f49]"
+                    >
+                      {item.Button}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                        <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div >
+      </div >
+    </div >
+  )
+}
+
+export default Projects
+</file>
+
+<file path="src/pages/PortafolioBody.tsx">
+import { useEffect, useState } from 'react'
+import About from '../common/About';
+import Experience from '../common/Experience';
+import ProjectsSection from '../common/ProjectsSection';
+import Footer from '../common/Footer';
+import Links from '../components/Links';
+// import { Notyf } from 'notyf';
+
+import useMousePosition from '../hooks/useMousePosition';
+import { useNavigate } from 'react-router-dom';
+
+const Portafolio = () => {
+    let navigate = useNavigate();
+    const position = useMousePosition(true);
+    const [activeSection, setActiveSection] = useState<string>('about');
+    // const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
+    const [localLanguage, setLocalLanguage] = useState("ENG");
+
+
+
+    //#region managemet of scrolling 
+    useEffect(() => {
+
+        const storedData: any = localStorage.getItem('language');
+        // console.log("data empty",storedData);
+        if (storedData || storedData === null) {
+            let local = storedData === null ? "ENG" :  JSON.parse(storedData);
+            setLocalLanguage(local);
+            // console.log("Wacha", JSON.parse(storedData));
+        }
+
+        const handleScroll = () => {
+            const sections = document.querySelectorAll<HTMLElement>('section');
+            let currentSection: string | null = 'about'; // Sección por defecto
+            let isAtBottom = false;
+
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 100 && rect.bottom >= 100) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            // Verificar si el usuario está cerca del final de la página
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                isAtBottom = true;
+            }
+
+            setActiveSection(isAtBottom ? 'projects' : currentSection!);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+
+    }, []);
+
+    const smoothScroll = (targetPosition: number, duration: number) => {
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime: number | null = null;
+
+        const animation = (currentTime: number) => {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = ease(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        };
+
+        const ease = (t: number, b: number, c: number, d: number) => {
+            t /= d / 2;
+            if (t < 1) return (c / 2) * t * t + b;
+            t--;
+            return (-c / 2) * (t * (t - 2) - 1) + b;
+        };
+
+        requestAnimationFrame(animation);
+    };
+
+    const handleNavClick = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            const targetPosition = section.offsetTop;
+            const duration = 600; // here change velocity 
+            smoothScroll(targetPosition, duration);
+        }
+    };
+
+
+
+    //#endregion
+
+
+
+    const lastvisited = () => {
+        navigate("/Map");
+        // notyf.error({
+        //     message: 'This feature is on testing',
+        //     duration: 1000,
+
+        // });
+    }
+    const lenguage = () => {
+        // console.log("click language");
+        // Verificar si existe un idioma almacenado
+        let language = localStorage.getItem('language');
+        // console.log("1", language);
+        if (language) {
+            // Deserializar el valor guardado
+            language = JSON.parse(language);
+
+            // Alternar entre "ESP" y "ENG"
+            if (language === "ESP") {
+                // console.log("2 eng set");
+                localStorage.setItem('language', JSON.stringify("ENG"));
+                setLocalLanguage("ENG");
+            } else {
+                console.log("2 spn set");
+                localStorage.setItem('language', JSON.stringify("ESP"));
+                setLocalLanguage("ESP");
+            }
+        } else {
+            // Si no existe, establecer por defecto en "ESP"
+            localStorage.setItem('language', JSON.stringify("ESP"));
+            setLocalLanguage("ESP");
+        }
+        // notyf.error({
+        //     message: 'This feature is on testing',
+        //     duration: 1000, 
+
+        // });
+        // console.log("v", localStorage.getItem('language'));
+    }
+
+
+    // console.log("aa", localLanguage);
+    // console.log("still working...");
+    // localStorage.removeItem("languag
+    return (
+        <div className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+
+            <div className="__variable_20b187 group/spotlight relative">
+
+                <div
+                    className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+                    style={{
+                        background: `radial-gradient(
+                            600px circle at ${position.x}px ${position.y}px,
+                            rgba(28, 211, 217, 0.1),
+                            transparent 40%
+                        )`,
+                    }}
+                ></div>
+
+                <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+                    <a href="#content" className="absolute left-0 top-0 block -translate-x-full rounded bg-gradient-to-br from-teal-400 via-blue-500 to-purple-600 px-4 py-3 text-sm font-bold uppercase tracking-widest text-white focus-visible:translate-x-0">Skip to Content</a>
+
+                    <div className="lg:flex lg:justify-between lg:gap-4">
+
+                        <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+                            <div>
+                                <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"><a href="/">Bryan Ruiz</a></h1>
+                                <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">Software Engineer</h2>
+                                <p className="mt-4 max-w-xs leading-normal">{localLanguage ==='ENG'?"I build maintainable and scalable":"Creo soluciones mantenibles" }
+                                    <br></br>
+                                    {localLanguage ==='ENG'?"solutions with the best quality":"y escalables con la mejor calidad."}</p>
+                                {/* navegation about, experience, projects */}
+
+                                {/* Wrap elements last visited and translate  */}
+
+                                <ul className="mt-1 w-max">
+                                    <div className="flex flex-wrap">
+                                        <li className="mr-6 text-xs shrink-0 mt-4">
+                                            <button onClick={() => lastvisited()} className="block hover:text-slate-200" rel="noreferrer noopener" aria-label={"(opens in a new tab)"} title={"Last visited"}>
+                                                <span className="sr-only">{"mira"}</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="currentColor" className="h-7 w-7" aria-hidden="true">
+                                                    <path d="M8.516 0c-4.687 0-8.5 3.813-8.5 8.5s3.813 8.5 8.5 8.5 8.5-3.813 8.5-8.5-3.814-8.5-8.5-8.5zM1.041 9h2.937c0.044 1.024 0.211 2.031 0.513 3h-2.603c-0.481-0.906-0.776-1.923-0.847-3zM3.978 8h-2.937c0.071-1.077 0.366-2.094 0.847-3h2.6c-0.301 0.969-0.467 1.976-0.51 3zM5.547 5h5.896c0.33 0.965 0.522 1.972 0.569 3h-7.034c0.046-1.028 0.239-2.035 0.569-3zM4.978 9h7.035c-0.049 1.028-0.241 2.035-0.572 3h-5.891c-0.331-0.965-0.524-1.972-0.572-3zM13.013 9h2.978c-0.071 1.077-0.366 2.094-0.847 3h-2.644c0.302-0.969 0.469-1.976 0.513-3zM13.013 8c-0.043-1.024-0.209-2.031-0.51-3h2.641c0.48 0.906 0.775 1.923 0.847 3h-2.978zM14.502 4h-2.354c-0.392-0.955-0.916-1.858-1.55-2.7 1.578 0.457 2.938 1.42 3.904 2.7zM9.074 1.028c0.824 0.897 1.484 1.9 1.972 2.972h-5.102c0.487-1.071 1.146-2.073 1.97-2.97 0.199-0.015 0.398-0.030 0.602-0.030 0.188 0 0.373 0.015 0.558 0.028zM6.383 1.313c-0.629 0.838-1.151 1.737-1.54 2.687h-2.314c0.955-1.267 2.297-2.224 3.854-2.687zM2.529 13h2.317c0.391 0.951 0.915 1.851 1.547 2.689-1.561-0.461-2.907-1.419-3.864-2.689zM7.926 15.97c-0.826-0.897-1.488-1.899-1.978-2.97h5.094c-0.49 1.072-1.152 2.075-1.979 2.972-0.181 0.013-0.363 0.028-0.547 0.028-0.2 0-0.395-0.015-0.59-0.030zM10.587 15.703c0.636-0.842 1.164-1.747 1.557-2.703h2.358c-0.968 1.283-2.332 2.247-3.915 2.703z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li className="mr-5 text-xs shrink-0 mt-4">
+                                            <button onClick={() => lenguage()} className="block hover:text-slate-200" rel="noreferrer noopener" aria-label={"(opens in a new tab)"} title={localLanguage ==="ENG"?"Spanish Language":"Idioma en ingles"}>
+                                                <span className="sr-only">{"Spanish or English"}</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" fill="currentColor" className="h-7 w-7" aria-hidden="true">
+                                                    <path d="M8 15H3.5A2.502 2.502 0 0 1 1 12.5v-9A2.502 2.502 0 0 1 3.5 1h9A2.502 2.502 0 0 1 15 3.5V8h-1V3.5A1.502 1.502 0 0 0 12.5 2h-9A1.502 1.502 0 0 0 2 3.5v9A1.502 1.502 0 0 0 3.5 14H8zm-.038-4.811a9.77 9.77 0 0 1-3.766 1.796l-.242-.97a8.816 8.816 0 0 0 3.282-1.532A9.264 9.264 0 0 1 4.888 5H4V4h3.279l-.544-.544.707-.707L8.692 4H12v1h-.914A9.836 9.836 0 0 1 9.78 8.152a3.853 3.853 0 0 0-1.82 2.037zm.032-1.383A8.167 8.167 0 0 0 10.058 5H5.922a8.18 8.18 0 0 0 2.072 3.806zM23 20.447v-8.894A2.525 2.525 0 0 0 20.484 9h-8.931A2.556 2.556 0 0 0 9 11.553v8.894A2.556 2.556 0 0 0 11.553 23h8.894A2.556 2.556 0 0 0 23 20.447zM20.484 10A1.517 1.517 0 0 1 22 11.516v8.968A1.517 1.517 0 0 1 20.484 22h-8.968A1.517 1.517 0 0 1 10 20.484v-8.968A1.517 1.517 0 0 1 11.516 10zm-2.086 8h-4.796l-1.159 2.23-.886-.46L16 11.215l4.443 8.555-.886.46zm-.52-1L16 13.385 14.122 17zM6 22.01a2.003 2.003 0 0 1-2-2v-2.303l1.646 1.646.707-.707L3.506 15.8.659 18.646l.707.707L3 17.72v2.292a3.003 3.003 0 0 0 3 3h2.058v-1zM22.646 4.647L21 6.293V4a3.003 3.003 0 0 0-3-3h-2v1h2a2.003 2.003 0 0 1 2 2v2.281l-1.634-1.635-.707.707 2.847 2.848 2.848-2.848z"></path>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </div>
+                                </ul>
+
+
+                                <nav className="nav hidden lg:block" aria-label="In-page jump links">
+                                    <ul className="mt-14 w-max">
+                                        <li onClick={() => handleNavClick('about')} >
+                                            <a className="group flex items-center py-3 " href="#about">
+                                                <span className={activeSection === "about" ? "nav-indicator mr-4 h-px w-16 bg-slate-200 transition-all" : "nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"}></span>
+                                                <span className={activeSection === "about" ? "nav-text text-xs font-bold uppercase tracking-widest text-slate-200" : "nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"}> {localLanguage ==='ENG'?"About":"Acerca"}</span>
+                                            </a>
+                                        </li>
+                                        <li onClick={() => handleNavClick('experience')}>
+                                            <a className="group flex items-center py-3" href="#experience">
+                                                <span className={activeSection === "experience" ? "nav-indicator mr-4 h-px w-16 bg-slate-600 transition-all" : "nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"}></span>
+                                                <span className={activeSection === "experience" ? "nav-text text-xs font-bold uppercase tracking-widest text-slate-200" : "nav-text text-xs font-bold uppercase tracking-widest text-slate-500 nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"}> {localLanguage ==='ENG'?"Experience":"Experiencia"}</span>
+                                            </a>
+                                        </li>
+                                        <li onClick={() => handleNavClick('projects')}>
+                                            <a className="group flex items-center py-3" href="#projects">
+                                                <span className={activeSection === "projects" ? "nav-indicator mr-4 h-px w-16 bg-slate-600 transition-all" : "nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"}></span>
+                                                <span className={activeSection === "projects" ? "nav-text text-xs font-bold uppercase tracking-widest text-slate-200" : "nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"}>{localLanguage ==='ENG'?"Projects":"Proyectos"}</span>
+                                            </a>
+                                        </li>
+                                        {/* icons possible buttons and components */}
+
+
+
+
+                                    </ul>
+                                </nav>
+                                {/* end navigation */}
+
+
+
+
+                            </div>
+                            {/* start networks as github, linkein, what or gmail */}
+                            <Links />
+                            {/* end networks */}
+                        </header>
+
+
+
+
+                        <main id="content" className="pt-24 lg:w-1/2 lg:py-24" >
+                            {/* ABOUT seccion */}
+                            <section id="about" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="About me">
+                                <About language={localLanguage} />
+                            </section>
+                            {/* END ABOUT SECCION */}
+
+                            {/* ************************* */}
+
+                            {/*START EX SECCTION */}
+                            <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work experience">
+                                <Experience language={localLanguage} />
+                            </section>
+                            {/* END EXperience seccion */}
+
+                            {/* Project secction */}
+                            <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Selected projects">
+                                <ProjectsSection language={localLanguage} />
+                            </section>
+                            {/* end project seccion */}
+
+                            {/* Footer seccion  */}
+                            <Footer />
+                            {/* end Powered by */}
+                        </main>
+
+                        <div></div>
+
+                    </div >
+                </div >
+            </div>
+        </div >
+    );
+}
+
+export default Portafolio
+</file>
+
+</files>
