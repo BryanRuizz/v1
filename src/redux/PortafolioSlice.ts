@@ -24,7 +24,7 @@ export const PortafolioSlice = createSlice({
 
 
     }
-
+ 
 })
 export const { setInf } = PortafolioSlice.actions; // this is for use funct to save in store 
 export default PortafolioSlice.reducer;
