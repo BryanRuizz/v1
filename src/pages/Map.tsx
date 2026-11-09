@@ -41,7 +41,6 @@ const Map = () => {
     let navigate = useNavigate();
     const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
     const [localLanguage, setLocalLanguage] = useState("ENG");
-    const [tkk, setTkk] = useState("");
 
 
     useEffect(() => {
