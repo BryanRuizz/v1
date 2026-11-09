@@ -10,7 +10,7 @@ export const dataprojects = [
 
     },
     {
-        href: "https://xam.aldafa.com.mx:3000/",
+        href: "https://xam.aldafa.com.mx",
         name: "Information Manager erp",
         label: "Erp system",
         desc: "Enterprise resource management system, non-commercial, modular, comprehensive and customised.",
@@ -48,7 +48,7 @@ export const dataprojectsEsp = [
 
     },
     {
-        href: "https://xam.aldafa.com.mx:3000/",
+        href: "https://xam.aldafa.com.mx",
         name: "Administracion de recursos ERP",
         label: "Erp system",
         desc: "Sistema de gestión de recursos empresariales, no comercial, modular, completo y personalizado.",
