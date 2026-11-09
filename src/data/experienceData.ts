@@ -27,7 +27,7 @@ export const experienceData = [
     {
         ariallabelDate: "April 2023 to August 2024",
         Sdate: "April 2023 — August 2024",
-        Shref: "https://xam.aldafa.com.mx:3000/",
+        Shref: "https://xam.aldafa.com.mx",
         ariallabelref: "Software Engineer, Accessibility at Aldafa (opens in a new tab)",
         position: "Software Engineer ·",
         companyname: "Aldafa",
@@ -119,7 +119,7 @@ export const experienceDataEsp = [
     {
         ariallabelDate: "2024 to Present",
         Sdate: "Abril 2023 — Agosto 2024",
-        Shref: "https://xam.aldafa.com.mx:3000/",
+        Shref: "https://xam.aldafa.com.mx",
         ariallabelref: "Software Engineer, Accessibility at Aldafa (opens in a new tab)",
         position: "Software Engineer ·",
         companyname: "Aldafa",

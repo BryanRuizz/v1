@@ -5,7 +5,7 @@ import { LatLngExpression } from 'leaflet';
 import { IoIosArrowBack } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
 import L from 'leaflet';
-import { getcity, updatecity } from '../services/MapServices';
+import { getcity, getInfo, Inside, updatecity } from '../services/MapServices';
 import { Notyf } from 'notyf';
 
 const defaultIcon = L.icon({
@@ -36,17 +36,18 @@ const SetViewOnClick = ({ location }: SetViewOnClickProps) => {
 
 const Map = () => {
     const [location, setLocation] = useState<LatLngExpression | null>([25.5427769, -103.4068786]);
-    const [city, setCity] = useState("Searching ");
+    const [city, setCity] = useState("Searching...");
     const isFetched = useRef(false);
     let navigate = useNavigate();
     const notyf = new Notyf({ position: { x: 'left', y: 'top' } });
     const [localLanguage, setLocalLanguage] = useState("ENG");
+    const [tkk, setTkk] = useState("");
 
 
     useEffect(() => {
         getcities();
         const storedData: any = localStorage.getItem('language');
-        // console.log("proyectbyone", storedData);
+       
         if (JSON.parse(storedData) === "ESP") {
             setLocalLanguage("ESP");
         } else {
@@ -54,23 +55,29 @@ const Map = () => {
         }
     }, []);
 
-    const fetchLocation = async () => {
+    const fetchLocation = async (tkk: string) => {
         if (isFetched.current) {
             return;
         }
 
         try {
-            const response = await fetch(`https://ipinfo.io/json?token=4148c242669b05`);
-            const data = await response.json();
+            const response = await getInfo();
+            
+            const data = response;
+   
             let thiscity = data.city + " " + data.region + "," + data.country;
             let cord = data.loc;
+
             let info = {
-                cityName: thiscity,
-                cityLocation: cord
+                name: thiscity,
+                latitude: cord.split(",")[0],
+                longitude: cord.split(",")[1],
+                accuracy: data.postal,
+                updated_at: new Date().toISOString()
             }
-            const apires = await updatecity(info);
-            console.log("apirest", apires);
-            isFetched.current = true;
+           
+            await updatecity(info,tkk);
+           isFetched.current = true;
         } catch (error) {
             console.error("Error obteniendo ubicación por IP: ", error);
         }
@@ -78,25 +85,31 @@ const Map = () => {
 
     const getcities = async () => {
         try {
-            const res: any = await getcity();
-            if (res) {
-                let ress = res.data;
+            const res = await getcity();
 
-                const parts = ress.split(/,(.+)/);
-                const location = parts[0].trim() + ',' + parts[1].trim().split(',')[0];
-                const coordinates = parts[1].trim().split(',').slice(1).join(',');
+            if (res.status === "OKk" && res.data?.length > 0) {
+                const cityData = res.data[0];
 
-                setCity(location);
-                const coordsArray = coordinates.split(',').map(Number);
-                setLocation(coordsArray);
-                fetchLocation();
+                const latitude = Number(cityData.latitude);
+                const longitude = Number(cityData.longitude);
+
+                if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) {
+                    throw new Error("Coordenadas inválidas");
+                }
+
+                setCity(cityData.name);
+                setLocation([latitude, longitude]);
+
+                const validTkk= await Inside();
+                // setTkk(validTkk);
+                fetchLocation(validTkk);
             }
         } catch (error) {
             notyf.error({
                 message: 'Not was possible get last city',
                 duration: 1000,
             });
-            console.error("f", error);
+            console.error("error", error);
         }
     }
 
@@ -126,8 +139,8 @@ const Map = () => {
                     <SetViewOnClick location={location} />
                     <Marker position={location}>
                         <Popup>
-                        {localLanguage === "ENG" ? "This is your most approximate location" : " Esta es tu ubicación aproximada."}
-                           
+                            {localLanguage === "ENG" ? "This is your most approximate location" : " Esta es tu ubicación aproximada."}
+
                         </Popup>
                     </Marker>
                 </MapContainer>
