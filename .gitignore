@@ -32,3 +32,4 @@ node_modules/
 #lock files
 
 .env*
+pnpm-workspace.yaml
