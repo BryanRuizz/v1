@@ -1,7 +1,18 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import obfuscatorPlugin from 'vite-plugin-javascript-obfuscator'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    obfuscatorPlugin({
+      apply: 'build',
+      debugger: false,
+      options: {
+        compact: true,
+        stringArray: true,
+        stringArrayThreshold: 0.75,
+      },
+    }),
+  ],
 })
