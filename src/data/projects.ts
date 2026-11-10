@@ -65,9 +65,9 @@ export const dataprojectsEsp = [
         mainimg: "/principalimg/aldafamain.webp",
     },
     {
-        href: "",
-        name: "Savvy bucks",
-        label: "Savvy aplicacion de prestamos",
+        href: "https://play.google.com/store/apps/details?id=aldafa.FinancialBox",
+        name: "FinancialBox",
+        label: "FinancialBox aplicacion gestion de inversiones y prestamos empresariales",
         desc: "Una aplicación móvil fácil de usar diseñada para gestionar tanto los ahorros como los préstamos a empresas, adaptada al público en general, con una interfaz intuitiva.",
         srcsett: "/principalimg/savvy.webp 1x, /principalimg/savvy.webp 2x",
         mainimg: "/principalimg/savvy.webp",
