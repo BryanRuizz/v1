@@ -1,7 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import vitePluginBundleObfuscator from 'vite-plugin-bundle-obfuscator'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    vitePluginBundleObfuscator({
+      autoExcludeNodeModules: true,
+      threadPool: true,
+      options: {
+        compact: true,
+        controlFlowFlattening: false,
+        deadCodeInjection: false,
+        stringArray: true,
+      },
+    }),
+  ],
 })
