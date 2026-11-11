@@ -34,13 +34,14 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
     "typescript": "^5.9.3",
-    "vite": "^6.4.5"
+    "vite": "^6.4.5",
+    "vite-plugin-bundle-obfuscator": "^1.14.0"
   },
   "packageManager": "pnpm@9.15.9",
   "pnpm": {
     "overrides": {
-      "minimatch": "11.0.4"
+      "minimatch": "11.0.4",
+      "zod": "4.6.7"
     }
   }
-
 }
