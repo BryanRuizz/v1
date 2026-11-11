@@ -1,0 +1,10 @@
+packages:
+  - "."
+allowBuilds:
+  esbuild: false
+overrides:
+  esbuild: ^0.25.0
+  minimatch: ^11.0.4
+  vite: ^6.4.5
+  zod: ^4.6.7
+
